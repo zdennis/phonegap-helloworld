@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDV.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVViewController.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVDebug.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVTimer.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h \
+  /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/emulator/include/Cordova/CDVJSON.h \
+  /Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos/GeLoSDK.framework/Headers/GeLoSoftwareBeaconManager.h \
+  /Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos/GeLoSDK.framework/Headers/GeLoSoftwareBeacon.h

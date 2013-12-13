@@ -1,0 +1,935 @@
+THelloWorld
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Info.plist /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/HelloWorld.app/ResourceRules.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+cCpResource HelloWorld/config.xml build/device/HelloWorld.app/config.xml
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76.png HelloWorld/Resources/icons/icon-76.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40@2x.png HelloWorld/Resources/icons/icon-40@2x.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72.png HelloWorld/Resources/icons/icon-72.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon.png HelloWorld/Resources/icons/icon.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon@2x.png HelloWorld/Resources/icons/icon@2x.png
+cCopyStringsFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.strings
+cCompileXIB /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50.png HelloWorld/Resources/icons/icon-50.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60@2x.png HelloWorld/Resources/icons/icon-60@2x.png
+cCopyStringsFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small.png HelloWorld/Resources/icons/icon-small.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape@2x~ipad.png HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape~ipad.png HelloWorld/Resources/splash/Default-Landscape~ipad.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait@2x~ipad.png HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small@2x.png HelloWorld/Resources/icons/icon-small@2x.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait~ipad.png HelloWorld/Resources/splash/Default-Portrait~ipad.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40.png HelloWorld/Resources/icons/icon-40.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default@2x~iphone.png HelloWorld/Resources/splash/Default@2x~iphone.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60.png HelloWorld/Resources/icons/icon-60.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default~iphone.png HelloWorld/Resources/splash/Default~iphone.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-568h@2x~iphone.png HelloWorld/Resources/splash/Default-568h@2x~iphone.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50@2x.png HelloWorld/Resources/icons/icon-50@2x.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76@2x.png HelloWorld/Resources/icons/icon-76@2x.png
+cCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72@2x.png HelloWorld/Resources/icons/icon-72@2x.png
+cProcessPCH /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch.pch HelloWorld/HelloWorld-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld normal armv7
+cGenerateDSYMFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld
+cProcessProductPackaging /Users/zdennis/Library/MobileDevice/Provisioning\ Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/embedded.mobileprovision
+cTouch /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent
+cCodeSign /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
+c00000000525642EE0000000000000110
+t1381384942
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
+c0000000052825E740000000000000094
+t1384275572
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+c0000000052825E740000000000000096
+t1384275572
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
+c0000000052825E74000000000000036B
+t1384275572
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052825E7400000000000001A0
+t1384275572
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c0000000052825E740000000000075BB0
+t1384275572
+s482224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
+c0000000052825E75000000000008DED0
+t1384275573
+s581328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000052825E7500000000004D63C0
+t1384275573
+s5071808
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c0000000052825E750000000000146100
+t1384275573
+s1335552
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c0000000052825E760000000000210C80
+t1384275574
+s2165888
+
+N/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos/GeLoSDK.framework/GeLoSDK
+c0000000052AB5F33000000000016CCF4
+t1386962739
+s1494260
+
+N/Users/zdennis/Library/MobileDevice/Provisioning Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision
+c00000000527BF6BE000000000000310D
+t1383855806
+s12557
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m
+c0000000052AA2FA700000000000013AB
+t1386885031
+s5035
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m
+c0000000052AA2FA7000000000000126B
+t1386885031
+s4715
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib
+c0000000052AA2FA70000000000001759
+t1386885031
+s5977
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist
+c0000000052AB7B7C00000000000009D9
+t1386969980
+s2521
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Prefix.pch
+c0000000052AA2FA700000000000003C5
+t1386885031
+s965
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m
+c0000000052AB6EE90000000000000306
+t1386966761
+s774
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/de.lproj/Localizable.strings
+c0000000052AA2FA700000000000004BF
+t1386885031
+s1215
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/en.lproj/Localizable.strings
+c0000000052AA2FA700000000000004AA
+t1386885031
+s1194
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-40.png
+c0000000052AA2FA70000000000000FF2
+t1386885031
+s4082
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-40@2x.png
+c0000000052AA2FA70000000000001CF3
+t1386885031
+s7411
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-50.png
+c0000000052AA2FA7000000000000130A
+t1386885031
+s4874
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-50@2x.png
+c0000000052AA2FA7000000000000258B
+t1386885031
+s9611
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-60.png
+c0000000052AA2FA700000000000016B3
+t1386885031
+s5811
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-60@2x.png
+c0000000052AA2FA70000000000002E94
+t1386885031
+s11924
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-72.png
+c0000000052AA2FA70000000000001350
+t1386885031
+s4944
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-72@2x.png
+c0000000052AA2FA70000000000002DBA
+t1386885031
+s11706
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-76.png
+c0000000052AA2FA70000000000001B71
+t1386885031
+s7025
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-76@2x.png
+c0000000052AA2FA70000000000003B9E
+t1386885031
+s15262
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-small.png
+c0000000052AA2FA70000000000000CDE
+t1386885031
+s3294
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-small@2x.png
+c0000000052AA2FA700000000000015E8
+t1386885031
+s5608
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon.png
+c0000000052AA2FA70000000000000F3E
+t1386885031
+s3902
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon@2x.png
+c0000000052AA2FA70000000000001EBD
+t1386885031
+s7869
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-568h@2x~iphone.png
+c0000000052AA2FA700000000000085B1
+t1386885031
+s34225
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png
+c0000000052AA2FA70000000000012DF4
+t1386885031
+s77300
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Landscape~ipad.png
+c0000000052AA2FA70000000000008877
+t1386885031
+s34935
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png
+c0000000052AA2FA70000000000012B02
+t1386885031
+s76546
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Portrait~ipad.png
+c0000000052AA2FA700000000000085E6
+t1386885031
+s34278
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default@2x~iphone.png
+c0000000052AA2FA70000000000007323
+t1386885031
+s29475
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default~iphone.png
+c0000000052AA2FA7000000000000289A
+t1386885031
+s10394
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/config.xml
+c0000000052AB7B7D00000000000012C5
+t1386969981
+s4805
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m
+c0000000052AA2FA7000000000000045C
+t1386885031
+s1116
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent
+t1386969984
+s420
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o
+t1386969984
+s78088
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/HelloWorld.LinkFileList
+c0000000052AB7B7F0000000000000295
+t1386969983
+s661
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o
+t1386969984
+s53336
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o
+t1386969984
+s47600
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o
+t1386969984
+s3172
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+c0000000052AB7B7F000000000000002D
+t1386969983
+s45
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+t1386969984
+s1088
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM
+t2
+s0
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-568h@2x~iphone.png
+t1386969984
+s61990
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape@2x~ipad.png
+t1386969984
+s143186
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape~ipad.png
+t1386969983
+s65305
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait@2x~ipad.png
+t1386969984
+s136924
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait~ipad.png
+t1386969983
+s63460
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default@2x~iphone.png
+t1386969983
+s55319
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default~iphone.png
+t1386969983
+s20021
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld
+t1386969984
+s459780
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Info.plist
+t1386969983
+s1529
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/MainViewController.nib
+t1386969984
+s1332
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/PkgInfo
+t2
+s0
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/ResourceRules.plist
+t1386969983
+s150
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/config.xml
+t1386969983
+s4805
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/de.lproj/Localizable.strings
+t1386969983
+s280
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/embedded.mobileprovision
+t1386969984
+s12557
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/en.lproj/Localizable.strings
+t1386969983
+s166
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40.png
+t1386969983
+s4450
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40@2x.png
+t1386969983
+s8883
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50.png
+t1386969983
+s5557
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50@2x.png
+t1386969983
+s11331
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60.png
+t1386969983
+s6838
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60@2x.png
+t1386969983
+s14152
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72.png
+t1386969983
+s8045
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72@2x.png
+t1386969984
+s17926
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76.png
+t1386969983
+s8463
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76@2x.png
+t1386969984
+s16629
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small.png
+t1386969983
+s3349
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small@2x.png
+t1386969983
+s6585
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon.png
+t1386969983
+s5977
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon@2x.png
+t1386969983
+s13012
+
+N/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/libCordova.a
+c0000000052AB7B7F00000000001BC540
+t1386969983
+s1819968
+
+N/var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch.pch
+t1386961813
+s5280672
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies54e2a6ffb25bb841^e277a7ffb25bb841^---0#1#1#--18"Check dependencies36"ED9F2A06-3EE1-4122-BDCF-57CF03685E09-
+
+CCodeSign /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+s408662784.853254
+e408662784.982965
+r1
+xCodeSign
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"CodeSign build/device/HelloWorld.app36"CodeSign build/device/HelloWorld.app9889da00b35bb841^40a4fb00b35bb841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/0000000000000000^1657"CodeSign build/device/HelloWorld.app    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    Using code signing identity "iPhone Developer: Zach Dennis (YY35YH7PLB)" and provisioning profile "iOS Team Provisioning Profile: *" (64D7D489-1C48-446C-81C6-7B69DE861EB8)    codesign --force --sign E0990F655892379F2FBB43518A84DF2D8AC3382E --resource-rules=/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/ResourceRules.plist --entitlements /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app36"631DCAC3-89C6-41B9-9C3D-E80A9C6957B7-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s408662784.680423
+e408662784.733412
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Compile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m200"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o HelloWorld/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerae4aae00b35bb841^c6c3bb00b35bb841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m0000000000000000^4659"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o HelloWorld/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/usr/local/lib/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/UninstalledProducts/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources/armv7 -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources -F/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -F/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos -include /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.dia -c /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/AppDelegate.m -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o36"8C8BE640-2EE0-410F-96CA-6FE285DD2227-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s408662784.680666
+e408662784.722724
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"Compile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m214"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o HelloWorld/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerb763ae00b35bb841^7906b900b35bb841^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m0000000000000000^4701"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o HelloWorld/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/usr/local/lib/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/UninstalledProducts/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources/armv7 -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources -F/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -F/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos -include /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.d --serialize-diagnostics /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.dia -c /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.m -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o36"77DF3BAD-C4EA-4612-9F0E-A22726B39438-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s408662784.679983
+e408662784.728972
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDV.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVURLProtocol.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVDebug.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVLocalStorage.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVTimer.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/NSArray+Comparisons.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/NSData+Base64.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/NSDictionary+Extensions.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/UIDevice+Extensions.h
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include/Cordova/CDVJSON.h
+d/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos/GeLoSDK.framework/Headers/GeLoSoftwareBeaconManager.h
+d/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos/GeLoSDK.framework/Headers/GeLoSoftwareBeacon.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"Compile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m224"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerb22eae00b35bb841^5e9eba00b35bb841^---0#0#1#-19%DVTDocumentLocation2@142"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m0000000000000000^4701"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/usr/local/lib/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/UninstalledProducts/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources/armv7 -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources -F/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -F/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos -include /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.d --serialize-diagnostics /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.dia -c /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Plugins/com.phonegap.plugins.MyPlugin/MyPlugin.m -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o36"FBD7D56C-F072-4622-B056-19B1C55D1C51-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s408662784.680163
+e408662784.698992
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m178"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o HelloWorld/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler2e39ae00b35bb841^fef1b200b35bb841^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m0000000000000000^4601"CompileC build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o HelloWorld/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/usr/local/lib/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/UninstalledProducts/include -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources/armv7 -I/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources -F/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -F/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos -include /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.dia -c /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/main.m -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o36"90448DA4-DB82-4ADF-8471-F99F4536D6C5-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCompileXIB /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib
+s408662783.826273
+e408662784.679253
+r1
+xCompileXIB
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Compiling /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib52"CompileXIB HelloWorld/Classes/MainViewController.xiba8c6d3ffb25bb841^0de4ad00b35bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib0000000000000000^1391"CompileXIB HelloWorld/Classes/MainViewController.xib    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/MainViewController.nib /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Classes/MainViewController.xib36"11091F98-EAB7-4502-AFAA-D87937004105-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-568h@2x~iphone.png HelloWorld/Resources/splash/Default-568h@2x~iphone.png
+s408662783.934291
+e408662784.047130
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-568h@2x~iphone.png
+xHelloWorld/Resources/splash/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile build/device/HelloWorld.app/Default-568h@2x~iphone.png HelloWorld/Resources/splash/Default-568h@2x~iphone.png121"CopyPNGFile build/device/HelloWorld.app/Default-568h@2x~iphone.png HelloWorld/Resources/splash/Default-568h@2x~iphone.pngae49efffb25bb841^6f110c00b35bb841^---0#0#1#-19%DVTDocumentLocation2@137"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-568h@2x~iphone.png0000000000000000^1328"CopyPNGFile build/device/HelloWorld.app/Default-568h@2x~iphone.png HelloWorld/Resources/splash/Default-568h@2x~iphone.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-568h@2x~iphone.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-568h@2x~iphone.png36"6DF3ACE6-87A1-427D-BA9C-876B6C36AD69-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape@2x~ipad.png HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png
+s408662783.863699
+e408662784.152054
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape@2x~ipad.png
+xHelloWorld/Resources/splash/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"CopyPNGFile build/device/HelloWorld.app/Default-Landscape@2x~ipad.png HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png127"CopyPNGFile build/device/HelloWorld.app/Default-Landscape@2x~ipad.png HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png724dddffb25bb841^57ed2600b35bb841^---0#0#1#-19%DVTDocumentLocation2@140"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png0000000000000000^1340"CopyPNGFile build/device/HelloWorld.app/Default-Landscape@2x~ipad.png HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape@2x~ipad.png36"D881D33E-2A3A-4B9E-9E37-62477D0E2649-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape~ipad.png HelloWorld/Resources/splash/Default-Landscape~ipad.png
+s408662783.864042
+e408662783.992563
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape~ipad.png
+xHelloWorld/Resources/splash/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"CopyPNGFile build/device/HelloWorld.app/Default-Landscape~ipad.png HelloWorld/Resources/splash/Default-Landscape~ipad.png121"CopyPNGFile build/device/HelloWorld.app/Default-Landscape~ipad.png HelloWorld/Resources/splash/Default-Landscape~ipad.png8464ddffb25bb841^732dfeffb25bb841^---0#0#1#-19%DVTDocumentLocation2@137"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Landscape~ipad.png0000000000000000^1328"CopyPNGFile build/device/HelloWorld.app/Default-Landscape~ipad.png HelloWorld/Resources/splash/Default-Landscape~ipad.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Landscape~ipad.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Landscape~ipad.png36"114E9E9D-3F62-4CF9-8144-2553170165E8-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait@2x~ipad.png HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png
+s408662783.864439
+e408662784.137863
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait@2x~ipad.png
+xHelloWorld/Resources/splash/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection125"CopyPNGFile build/device/HelloWorld.app/Default-Portrait@2x~ipad.png HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png125"CopyPNGFile build/device/HelloWorld.app/Default-Portrait@2x~ipad.png HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png006fddffb25bb841^514b2300b35bb841^---0#0#1#-19%DVTDocumentLocation2@139"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png0000000000000000^1336"CopyPNGFile build/device/HelloWorld.app/Default-Portrait@2x~ipad.png HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait@2x~ipad.png36"ECF64B15-2B0F-4B92-98D9-2CAB858A1AC8-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait~ipad.png HelloWorld/Resources/splash/Default-Portrait~ipad.png
+s408662783.865372
+e408662783.991549
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait~ipad.png
+xHelloWorld/Resources/splash/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"CopyPNGFile build/device/HelloWorld.app/Default-Portrait~ipad.png HelloWorld/Resources/splash/Default-Portrait~ipad.png119"CopyPNGFile build/device/HelloWorld.app/Default-Portrait~ipad.png HelloWorld/Resources/splash/Default-Portrait~ipad.pngb1a7ddffb25bb841^3fe4fdffb25bb841^---0#0#1#-19%DVTDocumentLocation2@136"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Portrait~ipad.png0000000000000000^1324"CopyPNGFile build/device/HelloWorld.app/Default-Portrait~ipad.png HelloWorld/Resources/splash/Default-Portrait~ipad.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default-Portrait~ipad.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default-Portrait~ipad.png36"EF24BE5F-C74F-4F2B-B11D-60CEADCDEB21-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default@2x~iphone.png HelloWorld/Resources/splash/Default@2x~iphone.png
+s408662783.895377
+e408662783.999983
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default@2x~iphone.png
+xHelloWorld/Resources/splash/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"CopyPNGFile build/device/HelloWorld.app/Default@2x~iphone.png HelloWorld/Resources/splash/Default@2x~iphone.png111"CopyPNGFile build/device/HelloWorld.app/Default@2x~iphone.png HelloWorld/Resources/splash/Default@2x~iphone.png7a53e5ffb25bb841^fc000000b35bb841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default@2x~iphone.png0000000000000000^1308"CopyPNGFile build/device/HelloWorld.app/Default@2x~iphone.png HelloWorld/Resources/splash/Default@2x~iphone.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default@2x~iphone.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default@2x~iphone.png36"DD03A473-4012-49AF-B7BE-83171241D279-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default~iphone.png HelloWorld/Resources/splash/Default~iphone.png
+s408662783.903771
+e408662783.955580
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default~iphone.png
+xHelloWorld/Resources/splash/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"CopyPNGFile build/device/HelloWorld.app/Default~iphone.png HelloWorld/Resources/splash/Default~iphone.png105"CopyPNGFile build/device/HelloWorld.app/Default~iphone.png HelloWorld/Resources/splash/Default~iphone.png23bee7ffb25bb841^10b2f4ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@129"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default~iphone.png0000000000000000^1296"CopyPNGFile build/device/HelloWorld.app/Default~iphone.png HelloWorld/Resources/splash/Default~iphone.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/splash/Default~iphone.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Default~iphone.png36"A4E45FC9-C777-45BB-9B56-919B97C551F1-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40.png HelloWorld/Resources/icons/icon-40.png
+s408662783.870939
+e408662783.903581
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40.png
+xHelloWorld/Resources/icons/icon-40.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/device/HelloWorld.app/icon-40.png HelloWorld/Resources/icons/icon-40.png90"CopyPNGFile build/device/HelloWorld.app/icon-40.png HelloWorld/Resources/icons/icon-40.pngc615dfffb25bb841^7366e7ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-40.png0000000000000000^1266"CopyPNGFile build/device/HelloWorld.app/icon-40.png HelloWorld/Resources/icons/icon-40.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-40.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40.png36"95A6464A-2E68-4DF5-803B-C71625CC51B5-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40@2x.png HelloWorld/Resources/icons/icon-40@2x.png
+s408662783.824830
+e408662783.864236
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40@2x.png
+xHelloWorld/Resources/icons/icon-40@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/device/HelloWorld.app/icon-40@2x.png HelloWorld/Resources/icons/icon-40@2x.png96"CopyPNGFile build/device/HelloWorld.app/icon-40@2x.png HelloWorld/Resources/icons/icon-40@2x.png054dd3ffb25bb841^3a3fddffb25bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-40@2x.png0000000000000000^1278"CopyPNGFile build/device/HelloWorld.app/icon-40@2x.png HelloWorld/Resources/icons/icon-40@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-40@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-40@2x.png36"FE22EEEF-CFBA-4195-8E3A-697CD822C37B-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50.png HelloWorld/Resources/icons/icon-50.png
+s408662783.827023
+e408662783.863103
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50.png
+xHelloWorld/Resources/icons/icon-50.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/device/HelloWorld.app/icon-50.png HelloWorld/Resources/icons/icon-50.png90"CopyPNGFile build/device/HelloWorld.app/icon-50.png HelloWorld/Resources/icons/icon-50.pngf9d6d3ffb25bb841^4df5dcffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-50.png0000000000000000^1266"CopyPNGFile build/device/HelloWorld.app/icon-50.png HelloWorld/Resources/icons/icon-50.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-50.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50.png36"B00FA63F-6673-4F8E-AE1F-D05A2DF3AA1B-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50@2x.png HelloWorld/Resources/icons/icon-50@2x.png
+s408662783.955749
+e408662783.993509
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50@2x.png
+xHelloWorld/Resources/icons/icon-50@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/device/HelloWorld.app/icon-50@2x.png HelloWorld/Resources/icons/icon-50@2x.png96"CopyPNGFile build/device/HelloWorld.app/icon-50@2x.png HelloWorld/Resources/icons/icon-50@2x.png1f13f5ffb25bb841^6666feffb25bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-50@2x.png0000000000000000^1278"CopyPNGFile build/device/HelloWorld.app/icon-50@2x.png HelloWorld/Resources/icons/icon-50@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-50@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-50@2x.png36"F047D45F-BC69-49E8-8FAE-961B2DFF152D-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60.png HelloWorld/Resources/icons/icon-60.png
+s408662783.900808
+e408662783.934144
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60.png
+xHelloWorld/Resources/icons/icon-60.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/device/HelloWorld.app/icon-60.png HelloWorld/Resources/icons/icon-60.png90"CopyPNGFile build/device/HelloWorld.app/icon-60.png HelloWorld/Resources/icons/icon-60.pngc4b5e6ffb25bb841^d924efffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-60.png0000000000000000^1266"CopyPNGFile build/device/HelloWorld.app/icon-60.png HelloWorld/Resources/icons/icon-60.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-60.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60.png36"17CAC93F-F6E7-4AC5-B250-436272F34C68-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60@2x.png HelloWorld/Resources/icons/icon-60@2x.png
+s408662783.828187
+e408662783.870632
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60@2x.png
+xHelloWorld/Resources/icons/icon-60@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/device/HelloWorld.app/icon-60@2x.png HelloWorld/Resources/icons/icon-60@2x.png96"CopyPNGFile build/device/HelloWorld.app/icon-60@2x.png HelloWorld/Resources/icons/icon-60@2x.pnga917d4ffb25bb841^cefcdeffb25bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-60@2x.png0000000000000000^1278"CopyPNGFile build/device/HelloWorld.app/icon-60@2x.png HelloWorld/Resources/icons/icon-60@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-60@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-60@2x.png36"779715EC-A9EB-41F2-B7F3-6DC533612848-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72.png HelloWorld/Resources/icons/icon-72.png
+s408662783.824933
+e408662783.862816
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72.png
+xHelloWorld/Resources/icons/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/device/HelloWorld.app/icon-72.png HelloWorld/Resources/icons/icon-72.png90"CopyPNGFile build/device/HelloWorld.app/icon-72.png HelloWorld/Resources/icons/icon-72.pngeb52d3ffb25bb841^7de6dcffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-72.png0000000000000000^1266"CopyPNGFile build/device/HelloWorld.app/icon-72.png HelloWorld/Resources/icons/icon-72.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-72.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72.png36"00E632CA-9D33-4103-AAA8-8FC0A9E7F415-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72@2x.png HelloWorld/Resources/icons/icon-72@2x.png
+s408662783.993153
+e408662784.047553
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72@2x.png
+xHelloWorld/Resources/icons/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/device/HelloWorld.app/icon-72@2x.png HelloWorld/Resources/icons/icon-72@2x.png96"CopyPNGFile build/device/HelloWorld.app/icon-72@2x.png HelloWorld/Resources/icons/icon-72@2x.png6762feffb25bb841^d42c0c00b35bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-72@2x.png0000000000000000^1278"CopyPNGFile build/device/HelloWorld.app/icon-72@2x.png HelloWorld/Resources/icons/icon-72@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-72@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-72@2x.png36"47B4867B-EF36-47AC-8C78-9C38DDDADD77-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76.png HelloWorld/Resources/icons/icon-76.png
+s408662783.824691
+e408662783.864797
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76.png
+xHelloWorld/Resources/icons/icon-76.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/device/HelloWorld.app/icon-76.png HelloWorld/Resources/icons/icon-76.png90"CopyPNGFile build/device/HelloWorld.app/icon-76.png HelloWorld/Resources/icons/icon-76.png3333d3ffb25bb841^666bddffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-76.png0000000000000000^1266"CopyPNGFile build/device/HelloWorld.app/icon-76.png HelloWorld/Resources/icons/icon-76.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-76.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76.png36"12B48E54-D8BF-4A1A-B377-0B0A2EE1CED3-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76@2x.png HelloWorld/Resources/icons/icon-76@2x.png
+s408662783.991788
+e408662784.048098
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76@2x.png
+xHelloWorld/Resources/icons/icon-76@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/device/HelloWorld.app/icon-76@2x.png HelloWorld/Resources/icons/icon-76@2x.png96"CopyPNGFile build/device/HelloWorld.app/icon-76@2x.png HelloWorld/Resources/icons/icon-76@2x.pngd104feffb25bb841^ad500c00b35bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-76@2x.png0000000000000000^1278"CopyPNGFile build/device/HelloWorld.app/icon-76@2x.png HelloWorld/Resources/icons/icon-76@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-76@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-76@2x.png36"B172AB78-9478-4F83-BF24-89B878699FDF-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small.png HelloWorld/Resources/icons/icon-small.png
+s408662783.863425
+e408662783.895061
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small.png
+xHelloWorld/Resources/icons/icon-small.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"CopyPNGFile build/device/HelloWorld.app/icon-small.png HelloWorld/Resources/icons/icon-small.png96"CopyPNGFile build/device/HelloWorld.app/icon-small.png HelloWorld/Resources/icons/icon-small.png6e33ddffb25bb841^5439e5ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@124"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-small.png0000000000000000^1278"CopyPNGFile build/device/HelloWorld.app/icon-small.png HelloWorld/Resources/icons/icon-small.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-small.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small.png36"0B1521D2-5037-49E8-94C5-1D64BBDFD76C-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small@2x.png HelloWorld/Resources/icons/icon-small@2x.png
+s408662783.864985
+e408662783.900080
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small@2x.png
+xHelloWorld/Resources/icons/icon-small@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"CopyPNGFile build/device/HelloWorld.app/icon-small@2x.png HelloWorld/Resources/icons/icon-small@2x.png102"CopyPNGFile build/device/HelloWorld.app/icon-small@2x.png HelloWorld/Resources/icons/icon-small@2x.png1ea6ddffb25bb841^d47fe6ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-small@2x.png0000000000000000^1290"CopyPNGFile build/device/HelloWorld.app/icon-small@2x.png HelloWorld/Resources/icons/icon-small@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon-small@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon-small@2x.png36"209CF3BD-EB6A-4B6F-92CF-5D80E3578EE7-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon.png HelloWorld/Resources/icons/icon.png
+s408662783.825293
+e408662783.862008
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon.png
+xHelloWorld/Resources/icons/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"CopyPNGFile build/device/HelloWorld.app/icon.png HelloWorld/Resources/icons/icon.png84"CopyPNGFile build/device/HelloWorld.app/icon.png HelloWorld/Resources/icons/icon.pngf96ad3ffb25bb841^c4afdcffb25bb841^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon.png0000000000000000^1254"CopyPNGFile build/device/HelloWorld.app/icon.png HelloWorld/Resources/icons/icon.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon.png36"38542091-0B4E-400C-B6F8-EDD98CF60AB9-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyPNGFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon@2x.png HelloWorld/Resources/icons/icon@2x.png
+s408662783.825617
+e408662783.864353
+r1
+xCopyPNGFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon@2x.png
+xHelloWorld/Resources/icons/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"CopyPNGFile build/device/HelloWorld.app/icon@2x.png HelloWorld/Resources/icons/icon@2x.png90"CopyPNGFile build/device/HelloWorld.app/icon@2x.png HelloWorld/Resources/icons/icon@2x.png6281d3ffb25bb841^dd5fddffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon@2x.png0000000000000000^1266"CopyPNGFile build/device/HelloWorld.app/icon@2x.png HelloWorld/Resources/icons/icon@2x.png    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/icons/icon@2x.png /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/icon@2x.png36"6DE8B216-9BD6-4A01-9DEA-F020B3BB0F20-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyStringsFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings
+s408662783.862226
+e408662783.863663
+r1
+xCopyStringsFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/de.lproj/Localizable.strings
+xHelloWorld/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy HelloWorld/Resources/de.lproj/Localizable.strings122"CopyStringsFile build/device/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.stringsaed7dcffb25bb841^431addffb25bb841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/de.lproj/Localizable.strings0000000000000000^1212"CopyStringsFile build/device/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/de.lproj -- HelloWorld/Resources/de.lproj/Localizable.strings36"9A4CBAD4-1213-4DA5-8CF6-02AA3945BE15-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCopyStringsFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.strings
+s408662783.825916
+e408662783.828058
+r1
+xCopyStringsFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/en.lproj/Localizable.strings
+xHelloWorld/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy HelloWorld/Resources/en.lproj/Localizable.strings122"CopyStringsFile build/device/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.stringsfda3d3ffb25bb841^8ffed3ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/Resources/en.lproj/Localizable.strings0000000000000000^1212"CopyStringsFile build/device/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.strings    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/en.lproj -- HelloWorld/Resources/en.lproj/Localizable.strings36"3D3BC1D7-6CBF-473F-BC44-7D12FA7F9ABA-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/HelloWorld.app/ResourceRules.plist
+s408662783.656804
+e408662783.657455
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist
+xbuild/device/HelloWorld.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/device/HelloWorld.app/ResourceRules.plist180"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/HelloWorld.app/ResourceRules.plist2635a8ffb25bb841^b14fa8ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@130"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/ResourceRules.plist0034a041ddffdf42^1352"CpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist build/device/HelloWorld.app/ResourceRules.plist    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/ResourceRules.plist /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app36"8C02FA53-CBDF-45F0-8798-1FA16A688CFE-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CCpResource HelloWorld/config.xml build/device/HelloWorld.app/config.xml
+s408662783.824568
+e408662783.825560
+r1
+xCpResource
+xHelloWorld/config.xml
+xbuild/device/HelloWorld.app/config.xml
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy build/device/HelloWorld.app/config.xml71"CpResource HelloWorld/config.xml build/device/HelloWorld.app/config.xml5a2ad3ffb25bb841^6d58d3ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@121"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/config.xml0034a041ddffdf42^1219"CpResource HelloWorld/config.xml build/device/HelloWorld.app/config.xml    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/config.xml /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app36"56FC6163-147D-4040-9418-BB3E322826FA-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CGenerateDSYMFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld
+s408662784.801049
+e408662784.845191
+r1
+xGenerateDSYMFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Generate /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM88"GenerateDSYMFile build/device/HelloWorld.app.dSYM build/device/HelloWorld.app/HelloWorlde124cd00b35bb841^395fd800b35bb841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM0034a041ddffdf42^1249"GenerateDSYMFile build/device/HelloWorld.app.dSYM build/device/HelloWorld.app/HelloWorld    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app.dSYM36"3EAD749D-2EB6-487F-9316-F490EF8B90CF-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CLd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld normal armv7
+s408662784.734193
+e408662784.800333
+r1
+xLd
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld
+xnormal
+xarmv7
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/HelloWorld.LinkFileList
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/crt1.3.1.o
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MyPlugin.o
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/main.o
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/AppDelegate.o
+d/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/MainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos/GeLoSDK.framework/GeLoSDK
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphoneos.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Link /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld54"Ld build/device/HelloWorld.app/HelloWorld normal armv7ed0bbc00b35bb841^d2e2cc00b35bb841^---0#0#1#--2536"Ld build/device/HelloWorld.app/HelloWorld normal armv7    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -F/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device -F/Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos -filelist /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/HelloWorld.LinkFileList -dead_strip -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.0 -framework CoreBluetooth -framework AssetsLibrary /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/libCordova.a -framework GeLoSDK -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/HelloWorld_dependency_info.dat -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/HelloWorld36"6FF539E6-2762-432A-881F-3042EA6A0D76-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CPhaseScriptExecution Copy\ www\ directory /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+s408662783.658254
+e408662783.824237
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.149s
+ouser	0m0.059s
+osys	0m0.088s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'131"PhaseScriptExecution Copy\ www\ directory build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh520fa9ffb25bb841^1c06d3ffb25bb841^-42"real	0m0.149suser	0m0.059ssys	0m0.088s3(21%IDEActivityLogMessage2@14"real	0m0.149s-408662783#1#14#-0#-----2@14"user	0m0.059s-408662783#15#14#-0#-----2@13"sys	0m0.088s-408662783#29#13#-0#-----0#0#1#--24163"PhaseScriptExecution Copy\ www\ directory build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER zdennis    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD "armv7 armv7s"    setenv ARCHS_STANDARD_32_64_BIT "armv7 armv7s"    setenv ARCHS_STANDARD_32_BIT "armv7 armv7s"    setenv ARCHS_STANDARD_64_BIT arm64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "armv7 armv7s arm64"    setenv ARCHS_UNIVERSAL_IPHONE_OS "armv7 armv7s"    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build    setenv BUILD_ROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device    setenv CACHE_ROOT /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CCHROOT /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_BOOL_CONVERSION YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED YES    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneOSCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device    setenv CONFIGURATION_TEMP_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos    setenv CONTENTS_FOLDER_PATH HelloWorld.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH HelloWorld.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/HelloWorld.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME HelloWorld.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH HelloWorld.app/Executables    setenv EXECUTABLE_FOLDER_PATH HelloWorld.app    setenv EXECUTABLE_NAME HelloWorld    setenv EXECUTABLE_PATH HelloWorld.app/HelloWorld    setenv FILE_LIST /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH HelloWorld.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device  /Users/zdennis/Library/Developer/Xcode/DerivedData/GeLoSDK-dfwrfqrdpxlpqbfyntswntormsdk/Build/Products/Debug-iphoneos"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME HelloWorld.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER HelloWorld/HelloWorld-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNDECLARED_SELECTOR YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/include \"/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/usr/local/lib/include\" \"/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/UninstalledProducts/include\" \"/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE HelloWorld/HelloWorld-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH HelloWorld.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH HelloWorld.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/HelloWorld.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER zdennis    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/HelloWorld.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH HelloWorld.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/HelloWorld_dependency_info.dat    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld-LinkMap-normal-armv7.txt    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal/armv7/HelloWorld.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH HelloWorld.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 13A603    setenv MAC_OS_X_VERSION_ACTUAL 1090    setenv MAC_OS_X_VERSION_MAJOR 1090    setenv MAC_OS_X_VERSION_MINOR 0900    setenv MODULE_CACHE_DIR /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache    setenv NATIVE_ARCH armv7    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Objects-normal    setenv OBJROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH HelloWorld.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/PkgInfo    setenv PKGINFO_PATH HelloWorld.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLATFORM_PREFERRED_ARCH arm64    setenv PLATFORM_PRODUCT_BUILD_VERSION 11B508    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH HelloWorld.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH HelloWorld.app/PrivateHeaders    setenv PRODUCT_NAME HelloWorld    setenv PRODUCT_SETTINGS_PATH /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT HelloWorld    setenv PROJECT_DERIVED_FILE_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/DerivedSources    setenv PROJECT_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PROJECT_FILE_PATH /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld.xcodeproj    setenv PROJECT_NAME HelloWorld    setenv PROJECT_TEMP_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build    setenv PROJECT_TEMP_ROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH HelloWorld.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH HelloWorld.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk    setenv SDK_NAME iphoneos7.0    setenv SDK_PRODUCT_BUILD_VERSION 11B508    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH HelloWorld.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH HelloWorld.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv SRCROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME HelloWorld    setenv TARGET_BUILD_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device    setenv TARGET_NAME HelloWorld    setenv TARGET_TEMP_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build    setenv TEMP_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build    setenv TEMP_FILES_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build    setenv TEMP_FILE_DIR /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build    setenv TEMP_ROOT /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH HelloWorld.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER zdennis    setenv USER_APPS_DIR /Users/zdennis/Applications    setenv USER_LIBRARY_DIR /Users/zdennis/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "armv7 armv7s"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH HelloWorld.app/version.plist    setenv VERSION_INFO_BUILDER zdennis    setenv VERSION_INFO_FILE HelloWorld_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:HelloWorld  PROJECT:HelloWorld-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME HelloWorld.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 5A3005    setenv XCODE_VERSION_ACTUAL 0502    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH HelloWorld.app/XPCServices    setenv YACC yacc    setenv arch armv7    setenv variant normal    /bin/sh -c /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/Script-304B58A110DAC018002A0835.sh36"6D020725-FA09-4F1D-B605-B36DCB306424-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CProcessInfoPlistFile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Info.plist /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist
+s408662783.654805
+e408662783.656494
+r1
+xProcessInfoPlistFile
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Info.plist
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Process /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist92"ProcessInfoPlistFile build/device/HelloWorld.app/Info.plist HelloWorld/HelloWorld-Info.plistf6b4a7ffb25bb841^8410a8ffb25bb841^---0#0#1#-19%DVTDocumentLocation2@115"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist0000000000000000^1504"ProcessInfoPlistFile build/device/HelloWorld.app/Info.plist HelloWorld/HelloWorld-Info.plist    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-infoPlistUtility /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/HelloWorld/HelloWorld-Info.plist -genpkginfo /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/ResourceRules.plist -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/Info.plist36"138E464C-5929-4BC4-A74B-11C2EFC35C26-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CProcessPCH /var/folders/m7/hndtclj11s19fpkj_mn6qf300000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-dslsvgvztabynxdilosnduzegldp/HelloWorld-Prefix.pch.pch HelloWorld/HelloWorld-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent
+s408662784.851782
+e408662784.852967
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection216"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent216"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcente61eda00b35bb841^b35cda00b35bb841^---0#0#1#-19%DVTDocumentLocation2@154"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent0034a041ddffdf42^1384"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/HelloWorld.build/Debug-iphoneos/HelloWorld.build/HelloWorld.xcent36"2EE610AE-D669-44A1-A4D3-228F1288B788-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CProcessProductPackaging /Users/zdennis/Library/MobileDevice/Provisioning\ Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/embedded.mobileprovision
+s408662784.845561
+e408662784.846672
+r1
+xProcessProductPackaging
+x/Users/zdennis/Library/MobileDevice/Provisioning Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection188"ProcessProductPackaging /Users/zdennis/Library/MobileDevice/Provisioning\ Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision build/device/HelloWorld.app/embedded.mobileprovision188"ProcessProductPackaging /Users/zdennis/Library/MobileDevice/Provisioning\ Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision build/device/HelloWorld.app/embedded.mobileprovisionce8ad800b35bb841^16c0d800b35bb841^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/embedded.mobileprovision0034a041ddffdf42^1302"ProcessProductPackaging /Users/zdennis/Library/MobileDevice/Provisioning\ Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision build/device/HelloWorld.app/embedded.mobileprovision    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    builtin-productPackagingUtility /Users/zdennis/Library/MobileDevice/Provisioning\ Profiles/64D7D489-1C48-446C-81C6-7B69DE861EB8.mobileprovision -o /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app/embedded.mobileprovision36"A2E2A705-5AEB-4D50-821A-60A8E1F6527A-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
+CTouch /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+s408662784.847776
+e408662784.851464
+r1
+xTouch
+x/Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection109"Touch /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app33"Touch build/device/HelloWorld.appd922d900b35bb841^55fad900b35bb841^---0#0#1#--993"Touch build/device/HelloWorld.app    cd /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/zdennis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/zdennis/.rvm/bin:/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/share/npm/bin/:/usr/local/heroku/bin:/Users/zdennis/.bin:/usr/local/bin:/usr/local/sbin:/Users/zdennis/bin:/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/zdennis/source/playground/objc/ScoutApp2/.tidbits/bin:/Users/zdennis/source/playground/AdobeAir/AdobeAIRSDK/bin:/Users/zdennis/Downloads/adt-bundle-mac-x86_64-20130219/sdk/tools/"    /usr/bin/touch -c /Users/zdennis/source/playground/phonegap/phonegap-helloworld/platforms/ios/build/device/HelloWorld.app36"83326401-2B95-4331-A2EA-D85340232AD4-
+bBD86443A-A726-46E7-8FA8-4FD33BD20634
+
