@@ -14,6 +14,8 @@
 
   NSString *beaconString = [NSString stringWithFormat: @"Beacon %ld", (long) beacon.beaconId];
 
+    NSLog(@"HI------------------------");
+
   pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[NSString stringWithFormat:@"Hello %@. Your beacon is %@", arg, beaconString]];
   [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
