@@ -16,6 +16,10 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var onBeaconFound = function() {
+    alert("Beacon Found");
+}
+
 var app = {
     // Application Constructor
     initialize: function() {

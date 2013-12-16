@@ -21,11 +21,9 @@
 
 -(void)registerForBeaconFound:(CDVInvokedUrlCommand*)command;
 {
-	CDVPluginResult *pluginResult = nil;
 	callbackId = command.callbackId;
 	callback = @"onBeaconFound";
 	[[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(foundBeacon:) name:kGeLoBeaconFound object:nil];
-
 	[[GeLoBeaconManager sharedInstance] startScanningForBeacons];
 }
 
