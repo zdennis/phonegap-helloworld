@@ -11,6 +11,19 @@ var MyPlugin = {
       "retrieveGreeting",
       ["Thomas"]
     )
+  },
+  registerForBeaconFound: function(){
+    return cordova.exec(
+      function(message){
+        alert(message);
+      },
+      function(){
+       alert("FAIL");
+      },
+      "MyPlugin",
+      "registerForBeaconFound",
+      []
+    )
   }
 };
 
