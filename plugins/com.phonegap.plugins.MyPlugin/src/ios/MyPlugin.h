@@ -8,7 +8,6 @@
 	NSString *callbackId;
 }
 
--(void)retrieveGreeting:(CDVInvokedUrlCommand*)command;
--(void)registerForBeaconFound:(CDVInvokedUrlCommand*)command;
+-(void)on:(CDVInvokedUrlCommand*)command;
 
 @end

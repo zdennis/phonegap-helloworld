@@ -1,28 +1,19 @@
 var MyPlugin = {
-  retrieveGreeting: function(){
-    return cordova.exec(
-      function(message){
-        alert(message);
-      },
-      function(){
-        alert("FAIL");
-      },
-      "MyPlugin",
-      "retrieveGreeting",
-      ["Thomas"]
-    )
+  Constants: {
+    GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged"
   },
-  registerForBeaconFound: function(){
+
+  on: function(sdkConstant, callback){
     return cordova.exec(
       function(message){
-        alert(message);
+        console.log("Success");
       },
       function(){
-       alert("FAIL");
+        console.log("Fail");
       },
       "MyPlugin",
-      "registerForBeaconFound",
-      []
+      "on",
+      [sdkConstant, callback]
     )
   }
 };

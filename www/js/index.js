@@ -51,7 +51,7 @@ var Map = function(){
 };
 
 Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
-  $("[data-beacon-id=" + beacon.beaconId + "]", this.el);
+  $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
 };
 
 Map.prototype.things = function(){
