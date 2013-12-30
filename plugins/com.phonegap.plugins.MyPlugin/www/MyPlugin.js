@@ -1,7 +1,14 @@
 var MyPlugin = {
   Constants: {
+    GeLoNearestBeaconExpired: "GeLoNearestBeaconExpired",
     GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged",
-    GeLoBeaconExpired: "GeLoBeaconExpired"
+    GeLoBeaconExpired: "GeLoBeaconExpired",
+    GeLoBeaconFound: "GeLoBeaconFound",
+    GeLoBeaconAgedGracefully: "GeLoBeaconAgedGracefully",
+    GeLoBTLEStateUnknown: "GeLoBTLEStateUnknown",
+    GeLoBTLEPoweredOff: "GeLoBTLEPoweredOff",
+    GeLoBTLEPoweredOn: "GeLoBTLEPoweredOn",
+    GeLoBTLEUnsupported: "GeLoBTLEUnsupported"
   },
 
   on: function(sdkConstant, callback){

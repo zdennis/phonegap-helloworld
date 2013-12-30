@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>null</key>
+	<array>
+		<string>GeLoBTLEStateUnknown</string>
+		<string>GeLoBTLEPoweredOff</string>
+		<string>GeLoBTLEPoweredOn</string>
+		<string>GeLoBTLEUnsupported</string>
+		<string>GeLoBeaconAgedGracefully</string>
+	</array>
+	<key>beacon</key>
+	<array>
+		<string>GeLoNearestBeaconExpired</string>
+		<string>GeLoNearestBeaconChanged</string>
+		<string>GeLoBeaconExpired</string>
+		<string>GeLoBeaconFound</string>
+	</array>
+</dict>
+</plist>

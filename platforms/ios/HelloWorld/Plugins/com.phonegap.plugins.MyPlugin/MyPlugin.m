@@ -7,13 +7,19 @@
 
 -(void)on:(CDVInvokedUrlCommand*)command;
 {
-    if (!_callbackDictionary)
-        _callbackDictionary = [NSMutableDictionary dictionary];
+    if (!_callbacks)
+        _callbacks = [NSMutableDictionary dictionary];
 
+    if (!_constants) {
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"constants" ofType:@"plist"];
+        _constants = [NSMutableDictionary dictionary];
+        _constants = [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    }
+    
     NSString *arg = [command.arguments objectAtIndex:0];
     NSString *callback = [command.arguments objectAtIndex:1];
 
-    [_callbackDictionary setObject:callback forKey:arg];
+    [_callbacks setObject:callback forKey:arg];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(event:) name:arg object:nil];
     [[GeLoBeaconManager sharedInstance] startScanningForBeacons];
@@ -21,27 +27,40 @@
 
 -(void)event:(NSNotification *)notification {
     NSString *eventName = notification.name;
-    NSData *beaconJson;
-    NSError *error;
+    NSData *json;
 
-    if ([eventName isEqualToString:@"GeLoNearestBeaconChanged"]) {
-        GeLoBeacon *beacon = notification.userInfo[@"beacon"];
-        beaconJson = [NSJSONSerialization dataWithJSONObject:[beacon dictionary] options:NSJSONWritingPrettyPrinted error:&error];
-    }
+    json = [self getUserinfoJson:notification.userInfo withEventName:eventName];
 
-    if ([eventName isEqualToString:@"GeLoBeaconExpired"]) {
-        GeLoBeacon *beacon = notification.userInfo[@"beacon"];
-        beaconJson = [NSJSONSerialization dataWithJSONObject:[beacon dictionary]options:NSJSONWritingPrettyPrinted error:&error];
-    }
-
-    if (!beaconJson) {
-        NSLog(@"%@", error);
+    if (!json) {
+        NSString *callback = [_callbacks objectForKey:notification.name];
+        NSString *jsCallBack = [NSString stringWithFormat:@"%@();", callback];
+        [self.webView stringByEvaluatingJavaScriptFromString:jsCallBack];
     }else{
-        NSString *jsonBeaconString = [[NSString alloc] initWithData:beaconJson encoding:NSUTF8StringEncoding];
-        NSString *callback = [_callbackDictionary objectForKey:notification.name];
+        NSString *jsonBeaconString = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
+        NSString *callback = [_callbacks objectForKey:notification.name];
         NSString *jsCallBack = [NSString stringWithFormat:@"%@(%@);", callback,jsonBeaconString];
         [self.webView stringByEvaluatingJavaScriptFromString:jsCallBack];
     }
+}
+
+-(NSData *)getUserinfoJson:(NSDictionary *)userInfo withEventName:(NSString *)eventName {
+    NSString *type;
+    NSData *json;
+    NSError *error;
+
+    for (NSArray *array in [_constants allValues]) {
+        if ([array containsObject:eventName]) {
+            NSArray *temp = [_constants allKeysForObject:array];
+            type = [temp objectAtIndex:0];
+        }
+    }
+
+    if ([type isEqualToString:@"beacon"]) {
+        GeLoBeacon *beacon = userInfo[@"beacon"];
+        json = [NSJSONSerialization dataWithJSONObject:[beacon dictionary]options:NSJSONWritingPrettyPrinted error:&error];
+    }
+
+    return json;
 }
 
 @end

@@ -4,7 +4,8 @@
 
 @interface MyPlugin : CDVPlugin
 
-@property (nonatomic) NSMutableDictionary *callbackDictionary;
+@property (nonatomic) NSMutableDictionary *callbacks;
+@property (nonatomic) NSMutableDictionary *constants;
 
 -(void)on:(CDVInvokedUrlCommand*)command;
 
