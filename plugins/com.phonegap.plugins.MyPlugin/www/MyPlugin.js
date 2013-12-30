@@ -1,6 +1,7 @@
 var MyPlugin = {
   Constants: {
-    GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged"
+    GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged",
+    GeLoBeaconExpired: "GeLoBeaconExpired"
   },
 
   on: function(sdkConstant, callback){

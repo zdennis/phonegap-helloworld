@@ -16,9 +16,6 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var onBeaconFound = function() {
-  alert("Beacon Found");
-};
 
 var Map = function(){
   var body = $(window),
@@ -51,8 +48,11 @@ var Map = function(){
 };
 
 Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
-  alert(beacon.beaconId);
   $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+};
+
+Map.prototype.onGeLoBeaconExpired = function(beacon){
+  $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("blink");
 };
 
 Map.prototype.things = function(){
@@ -97,5 +97,6 @@ var app = {
 
     // window.map.onGeLoNearestBeaconChanged(new MyPlugin.Beacon(beaconData));
     MyPlugin.on(K.GeLoNearestBeaconChanged, "window.map.onGeLoNearestBeaconChanged");
+    MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
   }
 };

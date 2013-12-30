@@ -3,10 +3,8 @@
 #import <Cordova/CDVPlugin.h>
 
 @interface MyPlugin : CDVPlugin
-{
-	NSString *callback;
-	NSString *callbackId;
-}
+
+@property (nonatomic) NSMutableDictionary *callbackDictionary;
 
 -(void)on:(CDVInvokedUrlCommand*)command;
 

@@ -1,6 +1,7 @@
 cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, exports, module) {var MyPlugin = {
   Constants: {
-    GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged"
+    GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged",
+    GeLoBeaconExpired: "GeLoBeaconExpired"
   },
 
   on: function(sdkConstant, callback){
