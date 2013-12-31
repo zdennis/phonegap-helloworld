@@ -38,7 +38,7 @@
     }else{
         NSString *jsonBeaconString = [[NSString alloc] initWithData:json encoding:NSUTF8StringEncoding];
         NSString *callback = [_callbacks objectForKey:notification.name];
-        NSString *jsCallBack = [NSString stringWithFormat:@"%@(%@);", callback,jsonBeaconString];
+        NSString *jsCallBack = [NSString stringWithFormat:@"%@(new MyPlugin.GeLoBeacon(%@));", callback,jsonBeaconString];
         [self.webView stringByEvaluatingJavaScriptFromString:jsCallBack];
     }
 }
@@ -48,14 +48,9 @@
     NSData *json;
     NSError *error;
 
-    for (NSArray *array in [_constants allValues]) {
-        if ([array containsObject:eventName]) {
-            NSArray *temp = [_constants allKeysForObject:array];
-            type = [temp objectAtIndex:0];
-        }
-    }
+    type = [_constants objectForKey:eventName];
 
-    if ([type isEqualToString:@"beacon"]) {
+    if ([type isEqualToString:@"GeLoBeacon"]) {
         GeLoBeacon *beacon = userInfo[@"beacon"];
         json = [NSJSONSerialization dataWithJSONObject:[beacon dictionary]options:NSJSONWritingPrettyPrinted error:&error];
     }

@@ -2,20 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>null</key>
-	<array>
-		<string>GeLoBTLEStateUnknown</string>
-		<string>GeLoBTLEPoweredOff</string>
-		<string>GeLoBTLEPoweredOn</string>
-		<string>GeLoBTLEUnsupported</string>
-		<string>GeLoBeaconAgedGracefully</string>
-	</array>
-	<key>beacon</key>
-	<array>
-		<string>GeLoNearestBeaconExpired</string>
-		<string>GeLoNearestBeaconChanged</string>
-		<string>GeLoBeaconExpired</string>
-		<string>GeLoBeaconFound</string>
-	</array>
+	<key>GeLoBeaconFound</key>
+	<string>GeLoBeacon</string>
+	<key>GeLoBeaconExpired</key>
+	<string>GeLoBeacon</string>
+	<key>GeLoNearestBeaconChanged</key>
+	<string>GeLoBeacon</string>
+	<key>GeLoNearestBeaconExpired</key>
+	<string>GeLoBeacon</string>
+	<key>GeLoBeaconAgedGracefully</key>
+	<string>nil</string>
+	<key>GeLoBTLEPoweredOn</key>
+	<string>nil</string>
+	<key>GeLoBTLEPoweredOff</key>
+	<string>nil</string>
+	<key>GeLoBTLEStateUnknown</key>
+	<string>nil</string>
 </dict>
 </plist>

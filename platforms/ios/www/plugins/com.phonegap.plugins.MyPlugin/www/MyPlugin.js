@@ -11,6 +11,14 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
     GeLoBTLEUnsupported: "GeLoBTLEUnsupported"
   },
 
+  GeLoBeacon: function(beacon) {
+    this.beaconId = beacon.beaconId,
+    this.signalStrength = beacon.signalStrength,
+    this.receivedRSSI = beacon.receivedRSSI,
+    this.timeToLive = beacon.timeToLive,
+    this.txPower = beacon.txPower
+  },
+
   on: function(sdkConstant, callback){
     return cordova.exec(
       function(message){

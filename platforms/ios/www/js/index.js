@@ -22,6 +22,9 @@ var Map = function(){
       width = body.width(),
       height = body.height();
 
+  this.nearestBeacon;
+  this.beacons = [];
+
   var mapElement = $('#map');
   this.el = mapElement;
   this.el.width(width);
@@ -48,10 +51,60 @@ var Map = function(){
 };
 
 Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
-  $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+  if (this.nearestBeacon !== undefined) {
+    if (beacon.beaconId !== this.nearestBeacon.beaconId) {
+      $("[data-beacon-id='" + this.nearestBeacon.beaconId + "']").removeClass("noBlink");
+
+      for (var i = 0; i < this.beacons.length; i++) {
+        if (this.beacons[i].beaconId === this.nearestBeacon.beaconId) {
+          $("[data-beacon-id='" + this.nearestBeacon.beaconId + "']").addClass("blink");
+          break;
+        }
+      }
+
+      $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("blink");
+      $("[data-beacon-id='" + beacon.beaconId + "']").addClass("noBlink");
+      this.nearestBeacon = beacon;
+    }
+  }else {
+    $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("blink");
+    $("[data-beacon-id='" + beacon.beaconId + "']").addClass("noBlink");
+    this.nearestBeacon = beacon;
+  }
+};
+
+Map.prototype.onGeLoBeaconFound = function(beacon){
+  var found;
+
+  for (var i = 0; i < this.beacons.length; i++) {
+    if (this.beacons[i].beaconId === beacon.beaconId) {
+      found = true;
+      break;
+    }
+  }
+  if (beacon.beaconId !== this.nearestBeacon.beaconId)
+    $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+
+  if (found !== true){
+    this.beacons.push(beacon);
+  }
 };
 
 Map.prototype.onGeLoBeaconExpired = function(beacon){
+  var index;
+
+  for (var i = 0; i < this.beacons.length; i++) {
+    if (this.beacons[i].beaconId === beacon.beaconId) {
+      index = i;
+      break;
+    }
+  }
+
+  if (index !== undefined) {
+    this.beacons.splice(index, 1);
+  }
+
+  $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("noBlink");
   $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("blink");
 };
 
@@ -79,6 +132,7 @@ Map.prototype.things = function(){
 
 var app = {
   // Application Constructor
+
   initialize: function() {
     this.bindEvents();
   },
@@ -97,6 +151,7 @@ var app = {
 
     // window.map.onGeLoNearestBeaconChanged(new MyPlugin.Beacon(beaconData));
     MyPlugin.on(K.GeLoNearestBeaconChanged, "window.map.onGeLoNearestBeaconChanged");
+    MyPlugin.on(K.GeLoBeaconFound, "window.map.onGeLoBeaconFound");
     MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
   }
 };
