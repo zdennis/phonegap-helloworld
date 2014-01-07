@@ -66,6 +66,13 @@
   return [self buildBeaconlessJSExpression];
 }
 
+-(NSString *) onGeLoScanningStarted{
+    return [self buildBeaconlessJSExpression];
+}
+
+-(NSString *) onGeLoScanningStopped {
+    return [self buildBeaconlessJSExpression];
+}
 
 # pragma mark Private Helpers
 
@@ -81,7 +88,7 @@
   }
 
   NSError *error;
-  NSData *json = [NSJSONSerialization dataWithJSONObject:beacon.dictionary options:NSJSONWritingPrettyPrinted error:&error];
+  NSData *json = [NSJSONSerialization dataWithJSONObject:[beacon dictionary] options:NSJSONWritingPrettyPrinted error:&error];
 
   if(error){
     [NSException raise:@"JSONSerializationError" format:@"Error serializing JSON for %@. Error was: %@", beacon.class, error];

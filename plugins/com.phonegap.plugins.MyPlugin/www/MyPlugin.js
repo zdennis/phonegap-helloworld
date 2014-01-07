@@ -8,7 +8,9 @@ var MyPlugin = {
     GeLoBTLEStateUnknown: "GeLoBTLEStateUnknown",
     GeLoBTLEPoweredOff: "GeLoBTLEPoweredOff",
     GeLoBTLEPoweredOn: "GeLoBTLEPoweredOn",
-    GeLoBTLEUnsupported: "GeLoBTLEUnsupported"
+    GeLoBTLEUnsupported: "GeLoBTLEUnsupported",
+    GeLoScanningStarted: "GeLoScanningStarted",
+    GeLoScanningStopped: "GeLoScanningStopped"
   },
 
   GeLoBeacon: function(beacon) {

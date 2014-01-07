@@ -109,6 +109,10 @@ Map.prototype.onGeLoBeaconExpired = function(beacon){
   $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("blink");
 };
 
+Map.prototype.onGeLoScanningStarted = function(){
+  alert("Scanning Started");
+}
+
 Map.prototype.things = function(){
   return [
     // relativeX          relativeY             beaconId
@@ -154,6 +158,8 @@ var app = {
     MyPlugin.on(K.GeLoNearestBeaconChanged, "window.map.onGeLoNearestBeaconChanged");
     MyPlugin.on(K.GeLoBeaconFound, "window.map.onGeLoBeaconFound");
     MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
+    MyPlugin.on(K.GeLoScanningStarted, "window.map.onGeLoScanningStarted");
+
 
     $("button").on("click", function(){
       var el = $(this);

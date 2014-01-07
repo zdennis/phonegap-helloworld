@@ -8,7 +8,9 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
     GeLoBTLEStateUnknown: "GeLoBTLEStateUnknown",
     GeLoBTLEPoweredOff: "GeLoBTLEPoweredOff",
     GeLoBTLEPoweredOn: "GeLoBTLEPoweredOn",
-    GeLoBTLEUnsupported: "GeLoBTLEUnsupported"
+    GeLoBTLEUnsupported: "GeLoBTLEUnsupported",
+    GeLoScanningStarted: "GeLoScanningStarted",
+    GeLoScanningStopped: "GeLoScanningStopped"
   },
 
   GeLoBeacon: function(beacon) {
@@ -89,5 +91,4 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
   }
 };
 
-module.exports = MyPlugin;
-});
+module.exports = MyPlugin;});
