@@ -22,7 +22,7 @@ var Map = function(){
       width = body.width(),
       height = body.height();
 
-  this.nearestBeacon;
+  this.nearestBeacon = {};
   this.beacons = [];
 
   var mapElement = $('#map');
@@ -75,15 +75,17 @@ Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
 
 Map.prototype.onGeLoBeaconFound = function(beacon){
   var found;
-
   for (var i = 0; i < this.beacons.length; i++) {
     if (this.beacons[i].beaconId === beacon.beaconId) {
       found = true;
       break;
     }
   }
-  if (beacon.beaconId !== this.nearestBeacon.beaconId)
-    $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+
+
+    if (beacon.beaconId !== this.nearestBeacon.beaconId){
+        $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+    }
 
   if (found !== true){
     this.beacons.push(beacon);
@@ -123,9 +125,9 @@ Map.prototype.things = function(){
     [0.10926118626430802, 0.687402799377916,   10], // Ladybug
     [0.32049947970863685, 0.6920684292379471,  11], // Leaf
     [0.5359001040582726,  0.7107309486780715,  12], // Bumble
-    [0.6992715920915713,  0.7076205287713841,  13], // Star
-    [0.8616024973985432,  0.5940902021772939,  14], // Sun
-    [0.6555671175858481,  0.8709175738724728,  15]  // Treasure
+    [0.6992715920915713,  0.7076205287713841,  77], // Star
+    [0.8616024973985432,  0.5940902021772939,  235], // Sun
+    [0.6555671175858481,  0.8709175738724728,  243]  // Treasure
   ];
 };
 

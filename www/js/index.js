@@ -22,7 +22,7 @@ var Map = function(){
       width = body.width(),
       height = body.height();
 
-  this.nearestBeacon;
+  this.nearestBeacon = {};
   this.beacons = [];
 
   var mapElement = $('#map');
@@ -75,15 +75,17 @@ Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
 
 Map.prototype.onGeLoBeaconFound = function(beacon){
   var found;
-
   for (var i = 0; i < this.beacons.length; i++) {
     if (this.beacons[i].beaconId === beacon.beaconId) {
       found = true;
       break;
     }
   }
-  if (beacon.beaconId !== this.nearestBeacon.beaconId)
-    $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+
+
+    if (beacon.beaconId !== this.nearestBeacon.beaconId){
+        $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+    }
 
   if (found !== true){
     this.beacons.push(beacon);
