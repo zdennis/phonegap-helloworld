@@ -51,7 +51,7 @@ var Map = function(){
 };
 
 Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
-  if (this.nearestBeacon !== undefined) {
+  if (this.nearestBeacon !== {}) {
     if (beacon.beaconId !== this.nearestBeacon.beaconId) {
       $("[data-beacon-id='" + this.nearestBeacon.beaconId + "']").removeClass("noBlink");
 
@@ -82,10 +82,9 @@ Map.prototype.onGeLoBeaconFound = function(beacon){
     }
   }
 
-
-    if (beacon.beaconId !== this.nearestBeacon.beaconId){
-        $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
-    }
+  if (beacon.beaconId !== this.nearestBeacon.beaconId){
+    $("[data-beacon-id='" + beacon.beaconId + "']").addClass("blink");
+  }
 
   if (found !== true){
     this.beacons.push(beacon);
@@ -125,9 +124,9 @@ Map.prototype.things = function(){
     [0.10926118626430802, 0.687402799377916,   10], // Ladybug
     [0.32049947970863685, 0.6920684292379471,  11], // Leaf
     [0.5359001040582726,  0.7107309486780715,  12], // Bumble
-    [0.6992715920915713,  0.7076205287713841,  13], // Star
-    [0.8616024973985432,  0.5940902021772939,  14], // Sun
-    [0.6555671175858481,  0.8709175738724728,  15]  // Treasure
+    [0.6992715920915713,  0.7076205287713841,  243], // Star
+    [0.8616024973985432,  0.5940902021772939,  259], // Sun
+    [0.6555671175858481,  0.8709175738724728,  354]  // Treasure
   ];
 };
 
@@ -155,5 +154,18 @@ var app = {
     MyPlugin.on(K.GeLoNearestBeaconChanged, "window.map.onGeLoNearestBeaconChanged");
     MyPlugin.on(K.GeLoBeaconFound, "window.map.onGeLoBeaconFound");
     MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
+
+    $("button").on("click", function(){
+      var el = $(this);
+      if($(el).hasClass("started")){
+        MyPlugin.stopScanningForBeacons();
+        $(el).removeClass("started");
+        $(el).addClass("stopped").html("Start");
+      } else {
+        $(el).removeClass("stopped").html("Stop");
+        $(el).addClass("started");
+        MyPlugin.startScanningForBeacons();
+      }
+    });
   }
 };

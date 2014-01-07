@@ -52,6 +52,16 @@ body {
     height: 100%;
 }
 
+header {
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+header button {
+    font-size: 28px;
+    padding: 1em;
+}
+
 #map {
     background:url(../img/map.png);
     background-size: 100% 100%;
