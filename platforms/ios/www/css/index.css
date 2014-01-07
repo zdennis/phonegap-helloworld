@@ -65,9 +65,6 @@ body {
     display: block;
 }
 
-#map .thing.noBlink{
-    display: block;
-}
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
@@ -94,13 +91,4 @@ body {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border: 3px solid;
-}
-
-.noBlink{
-    border-radius:20px;
-    -webkit-border-radius:20px;
-    border:3px solid;
 }
