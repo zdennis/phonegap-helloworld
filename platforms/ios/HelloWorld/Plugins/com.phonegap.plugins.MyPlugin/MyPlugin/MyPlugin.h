@@ -5,7 +5,6 @@
 @interface MyPlugin : CDVPlugin
 
 @property (nonatomic) NSMutableDictionary *callbacks;
-@property (nonatomic) NSMutableDictionary *constants;
 
 -(void)on:(CDVInvokedUrlCommand*)command;
 

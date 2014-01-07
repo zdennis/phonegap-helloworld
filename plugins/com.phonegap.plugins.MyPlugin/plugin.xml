@@ -36,8 +36,5 @@
     <header-file src="src/ios/MyPluginJavaScriptExpression.h" target-dir="MyPlugin/"/>
     <source-file src="src/ios/MyPluginJavaScriptExpression.m" target-dir="MyPlugin/"/>
 
-    <source-file src="src/ios/MyPluginConstants.plist" target-dir="MyPlugin/"/>
-
-
   </platform>
 </plugin>
