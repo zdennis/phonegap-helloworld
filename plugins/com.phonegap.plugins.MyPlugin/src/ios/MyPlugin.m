@@ -6,7 +6,17 @@
 
 @implementation MyPlugin
 
--(void)on:(CDVInvokedUrlCommand*)command;
+-(void)startScanningForBeacons:(CDVInvokedUrlCommand*)command
+{
+    [[GeLoBeaconManager sharedInstance] startScanningForBeacons];
+}
+
+-(void)stopScanningForBeacons:(CDVInvokedUrlCommand*)command
+{
+    [[GeLoBeaconManager sharedInstance] stopScanningForBeacons];
+}
+
+-(void)on:(CDVInvokedUrlCommand*)command
 {
     if (!_callbacks)
         _callbacks = [NSMutableDictionary dictionary];

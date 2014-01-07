@@ -42,8 +42,8 @@
 		ABC689EC185A6A6600391DD8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC689EB185A6A6600391DD8 /* CoreBluetooth.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
-		C4EB4897E53C42049ECFE154 /* MyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 612C837165344327BB5B8E9C /* MyPlugin.m */; };
-		345D815F65804DA2A8DBF94D /* MyPluginJavaScriptExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 76EE634BEBE349148F73F700 /* MyPluginJavaScriptExpression.m */; };
+		B4B70EF3F5694F08863A96AD /* MyPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F711BF1642F4816A8C096DA /* MyPlugin.m */; };
+		DA69F7F23B834F9D84574F54 /* MyPluginJavaScriptExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = A432990DF46C40B5BC637DE6 /* MyPluginJavaScriptExpression.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,10 +108,10 @@
 		ABC689EB185A6A6600391DD8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloWorld/config.xml; sourceTree = "<group>"; };
-		612C837165344327BB5B8E9C /* MyPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MyPlugin.m"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		76EE634BEBE349148F73F700 /* MyPluginJavaScriptExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MyPluginJavaScriptExpression.m"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPluginJavaScriptExpression.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		5174134F2D2546009E233C15 /* MyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyPlugin.h"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		F13DB0D359404AEDA4693FC5 /* MyPluginJavaScriptExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyPluginJavaScriptExpression.h"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPluginJavaScriptExpression.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		1F711BF1642F4816A8C096DA /* MyPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MyPlugin.m"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A432990DF46C40B5BC637DE6 /* MyPluginJavaScriptExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "MyPluginJavaScriptExpression.m"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPluginJavaScriptExpression.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		F7DD1C8D78084D958060B901 /* MyPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyPlugin.h"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		DCBA08C31D364855AD6C5C9F /* MyPluginJavaScriptExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MyPluginJavaScriptExpression.h"; path = "com.phonegap.plugins.MyPlugin/MyPlugin/MyPluginJavaScriptExpression.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,10 +236,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				612C837165344327BB5B8E9C /* MyPlugin.m */,
-				76EE634BEBE349148F73F700 /* MyPluginJavaScriptExpression.m */,
-				5174134F2D2546009E233C15 /* MyPlugin.h */,
-				F13DB0D359404AEDA4693FC5 /* MyPluginJavaScriptExpression.h */,
+				1F711BF1642F4816A8C096DA /* MyPlugin.m */,
+				A432990DF46C40B5BC637DE6 /* MyPluginJavaScriptExpression.m */,
+				F7DD1C8D78084D958060B901 /* MyPlugin.h */,
+				DCBA08C31D364855AD6C5C9F /* MyPluginJavaScriptExpression.h */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -425,8 +425,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				C4EB4897E53C42049ECFE154 /* MyPlugin.m in Sources */,
-				345D815F65804DA2A8DBF94D /* MyPluginJavaScriptExpression.m in Sources */,
+				B4B70EF3F5694F08863A96AD /* MyPlugin.m in Sources */,
+				DA69F7F23B834F9D84574F54 /* MyPluginJavaScriptExpression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
