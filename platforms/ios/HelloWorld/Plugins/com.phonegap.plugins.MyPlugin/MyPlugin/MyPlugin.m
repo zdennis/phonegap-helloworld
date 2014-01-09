@@ -1,23 +1,79 @@
 #import "MyPlugin.h"
 #import "MyPluginJavaScriptExpression.h"
-#import <GeLoSDK/GeLoSoftwareBeaconManager.h>
 #import <GeLoSDK/GeLoSDK.h>
 
 
 @implementation MyPlugin
 
--(void)startScanningForBeacons:(CDVInvokedUrlCommand*)command
-{
+-(void)startScanningForBeacons:(CDVInvokedUrlCommand*)command {
     [[GeLoBeaconManager sharedInstance] startScanningForBeacons];
 }
 
--(void)stopScanningForBeacons:(CDVInvokedUrlCommand*)command
-{
+-(void)stopScanningForBeacons:(CDVInvokedUrlCommand*)command {
     [[GeLoBeaconManager sharedInstance] stopScanningForBeacons];
 }
 
--(void)on:(CDVInvokedUrlCommand*)command
-{
+-(void)isScanning:(CDVInvokedUrlCommand*)command {
+    BOOL scanningStatus = [[GeLoBeaconManager sharedInstance] isScanning];
+    NSString *returnString = scanningStatus ? @"true" : @"false";
+    [self.webView stringByEvaluatingJavaScriptFromString:returnString];
+}
+
+-(void)setDefaultTimeToLive:(CDVInvokedUrlCommand*)command {
+    NSNumber *ttl = [command.arguments objectAtIndex:0];
+    [[GeLoBeaconManager sharedInstance] setDefaultTimeToLive:[ttl integerValue]];
+}
+
+-(void)setDefaultFalloff:(CDVInvokedUrlCommand*)command {
+    NSNumber *falloff = [command.arguments objectAtIndex:0];
+    [[GeLoBeaconManager sharedInstance] setDefaultFalloff:[falloff integerValue]];
+}
+
+-(void)setDefaultSignalCeiling:(CDVInvokedUrlCommand*)command {
+    NSNumber *signalCeiling = [command.arguments objectAtIndex:0];
+    [[GeLoBeaconManager sharedInstance] setDefaultSignalCeiling:[signalCeiling integerValue]];
+}
+
+-(void)knownBeacons:(CDVInvokedUrlCommand*)command {
+    NSString *jsResult = nil;
+    CDVPluginResult *result = nil;
+    NSArray *beacons = [[GeLoBeaconManager sharedInstance] knownBeacons];
+
+    if ([beacons count]) {
+        NSString *jsonArray = [MyPluginJavaScriptExpression javascriptForGeLoBeaconArray:beacons];
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsonArray];
+        jsResult = [result toSuccessCallbackString:command.callbackId];
+    }else{
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+        jsResult = [result toErrorCallbackString:command.callbackId];
+    }
+
+    [self writeJavascript:jsResult];
+}
+
+-(void)nearestBeacon:(CDVInvokedUrlCommand*)command {
+    NSString *jsResult = nil;
+    CDVPluginResult *result = nil;
+
+    GeLoBeacon *beacon = [[GeLoBeaconManager sharedInstance] nearestBeacon];
+    if (beacon) {
+        NSString *jsObject = [MyPluginJavaScriptExpression javascriptForGeLoBeacon:beacon];
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsObject];
+        jsResult = [result toSuccessCallbackString:command.callbackId];
+    }else{
+        result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
+        jsResult = [result toErrorCallbackString:command.callbackId];
+    }
+
+    [self writeJavascript:jsResult];
+}
+
+
+-(void)unsetNearestBeacon:(CDVInvokedUrlCommand*)command {
+    [[GeLoBeaconManager sharedInstance] unsetNearestBeacon];
+}
+
+-(void)on:(CDVInvokedUrlCommand*)command {
     if (!_callbacks)
         _callbacks = [NSMutableDictionary dictionary];
 

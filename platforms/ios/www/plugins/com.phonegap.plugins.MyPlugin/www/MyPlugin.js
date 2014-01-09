@@ -88,6 +88,101 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
       "stopScanningForBeacons",
       []
     );
+  },
+
+  isScanning: function(){
+    return cordova.exec(
+      function(message){},
+      function(){
+        console.log("Fail");
+      },
+      "MyPlugin",
+      "isScanning",
+      []
+    );
+  },
+
+  setDefaultTimeToLive: function(arg){
+    return cordova.exec(
+      function(message){},
+      function(){
+        console.log("Fail");
+      },
+      "MyPlugin",
+      "setDefaultTimeToLive",
+      [arg]
+    );
+  },
+
+  setDefaultFalloff: function(arg){
+    return cordova.exec(
+      function(message){},
+      function(){
+        console.log("Fail");
+      },
+      "MyPlugin",
+      "setDefaultFalloff",
+      [arg]
+    );
+  },
+
+  setDefaultSignalCeiling: function(arg){
+    return cordova.exec(
+      function(message){},
+      function(){
+        console.log("Fail");
+      },
+      "MyPlugin",
+      "setDefaultSignalCeiling",
+      [arg]
+    );
+  },
+
+  knownBeacons: function(callback){
+    return cordova.exec(
+      function(beacons){
+        //alert(message);
+        var jsonObj = $.parseJSON(beacons);
+        var beaconArray = [];
+        $.each(jsonObj, function(idx, beacon) {
+          beaconArray.push(new MyPlugin.GeLoBeacon(beacon));
+        })
+        callback(beaconArray);
+      },
+      function(){
+        callback([]);
+      },
+      "MyPlugin",
+      "knownBeacons",
+      []
+    );
+  },
+
+  nearestBeacon: function(callback){
+    return cordova.exec(
+      function(beacon){
+        var jsonObj = $.parseJSON(beacon);
+        callback(new MyPlugin.GeLoBeacon(jsonObj));
+      },
+      function(){
+        callback({});
+      },
+      "MyPlugin",
+      "nearestBeacon",
+      []
+    );
+  },
+
+  unsetNearestBeacon: function(){
+    return cordova.exec(
+      function(message){},
+      function(){
+        console.log("Fail");
+      },
+      "MyPlugin",
+      "unsetNearestBeacon",
+      []
+    );
   }
 };
 

@@ -110,7 +110,7 @@ Map.prototype.onGeLoBeaconExpired = function(beacon){
 };
 
 Map.prototype.onGeLoScanningStarted = function(){
-  alert("Scanning Started");
+  //alert("Scanning Started");
 }
 
 Map.prototype.things = function(){
@@ -128,12 +128,11 @@ Map.prototype.things = function(){
     [0.10926118626430802, 0.687402799377916,   10], // Ladybug
     [0.32049947970863685, 0.6920684292379471,  11], // Leaf
     [0.5359001040582726,  0.7107309486780715,  12], // Bumble
-    [0.6992715920915713,  0.7076205287713841,  243], // Star
+    [0.6992715920915713,  0.7076205287713841,  147], // Star
     [0.8616024973985432,  0.5940902021772939,  259], // Sun
     [0.6555671175858481,  0.8709175738724728,  354]  // Treasure
   ];
 };
-
 
 var app = {
   // Application Constructor
@@ -160,6 +159,7 @@ var app = {
     MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
     MyPlugin.on(K.GeLoScanningStarted, "window.map.onGeLoScanningStarted");
 
+    MyPlugin.setDefaultTimeToLive(2);
 
     $("button").on("click", function(){
       var el = $(this);
