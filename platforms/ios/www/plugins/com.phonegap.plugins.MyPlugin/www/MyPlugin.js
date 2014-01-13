@@ -90,9 +90,12 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
     );
   },
 
-  isScanning: function(){
+  isScanning: function(callback){
     return cordova.exec(
-      function(message){},
+      function(message){
+        var jsonObj = $.parseJSON(message);
+        callback(jsonObj);
+      },
       function(){
         console.log("Fail");
       },

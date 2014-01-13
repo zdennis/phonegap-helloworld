@@ -158,8 +158,10 @@ var app = {
     MyPlugin.on(K.GeLoBeaconFound, "window.map.onGeLoBeaconFound");
     MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
     MyPlugin.on(K.GeLoScanningStarted, "window.map.onGeLoScanningStarted");
-
-    MyPlugin.setDefaultTimeToLive(2);
+    MyPlugin.isScanning(function(status){
+      alert("Scanning Status: "+status);
+    })
+    //MyPlugin.setDefaultTimeToLive(2);
 
     $("button").on("click", function(){
       var el = $(this);

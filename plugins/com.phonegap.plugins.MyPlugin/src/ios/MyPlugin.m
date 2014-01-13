@@ -14,9 +14,13 @@
 }
 
 -(void)isScanning:(CDVInvokedUrlCommand*)command {
+    NSString *jsResult = nil;
+    CDVPluginResult *result = nil;
     BOOL scanningStatus = [[GeLoBeaconManager sharedInstance] isScanning];
-    NSString *returnString = scanningStatus ? @"true" : @"false";
-    [self.webView stringByEvaluatingJavaScriptFromString:returnString];
+    result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:scanningStatus];
+    jsResult = [result toSuccessCallbackString:command.callbackId];
+
+    [self writeJavascript:jsResult];
 }
 
 -(void)setDefaultTimeToLive:(CDVInvokedUrlCommand*)command {
