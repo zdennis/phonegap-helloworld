@@ -4,12 +4,10 @@
 @interface MyPluginJavaScriptExpression : NSObject
 
 @property (readonly) NSNotification *notification;
-@property (readonly) NSString *callback;
 @property (readonly) GeLoBeacon *beacon;
 @property (readonly) NSArray *beaconArray;
 
-+(NSString *) jsExpressionForNotification:(NSNotification *) notification
-                              andCallback:(NSString *) callback;
++(NSString *) jsExpressionForNotification:(NSNotification *) notification;
 +(NSString *) javascriptForGeLoBeacon:(GeLoBeacon *)beacon;
 +(NSString *) javascriptForGeLoBeaconArray:(NSArray *)beacons;
 

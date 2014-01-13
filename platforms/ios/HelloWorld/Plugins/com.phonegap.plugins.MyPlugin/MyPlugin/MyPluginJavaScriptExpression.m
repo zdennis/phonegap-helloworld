@@ -2,10 +2,9 @@
 
 @implementation MyPluginJavaScriptExpression
 
-+(NSString *) jsExpressionForNotification:(NSNotification *) notification andCallback:(NSString *) callback {
++(NSString *) jsExpressionForNotification:(NSNotification *) notification {
   MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc] 
-                                              initWithNotification: notification
-                                              andCallback:callback];
+                                              initWithNotification: notification];
   return [expression jsExpression];
 }
 
@@ -22,11 +21,10 @@
     return [expression javascriptForBeaconArray];
 }
 
--(id) initWithNotification:(NSNotification *) notification andCallback:(NSString *) callback {
+-(id) initWithNotification:(NSNotification *) notification {
   self = [super init];
   if(self){
     _notification = notification;
-    _callback     = callback;
   }
   return self;
 }
@@ -63,43 +61,43 @@
 # pragma mark Private Supported GeLo Notifications
 
 -(NSString *) onGeLoBeaconFound {
-    return [self buildBeaconJSExpression];
+    return [self buildBeaconJSObject];
 }
 
 -(NSString *) onGeLoBeaconExpired {
-  return [self buildBeaconJSExpression];
+  return [self buildBeaconJSObject];
 }
 
 -(NSString *) onGeLoNearestBeaconChanged {
-    return [self buildBeaconJSExpression];
+    return [self buildBeaconJSObject];
 }
 
 -(NSString *) onGeLoNearestBeaconExpired {
-  return [self buildBeaconJSExpression];
+  return [self buildBeaconJSObject];
 }
 
 -(NSString *) onGeLoBeaconAgedGracefully {
-  return [self buildBeaconlessJSExpression];
+  return [self buildBeaconlessJSObject];
 }
 
 -(NSString *) onGeLoBTLEPoweredOn {
-  return [self buildBeaconlessJSExpression];
+  return [self buildBeaconlessJSObject];
 }
 
 -(NSString *) onGeLoBTLEPoweredOff {
-  return [self buildBeaconlessJSExpression];
+  return [self buildBeaconlessJSObject];
 }
 
 -(NSString *) onGeLoBTLEStateUnknown {
-  return [self buildBeaconlessJSExpression];
+  return [self buildBeaconlessJSObject];
 }
 
 -(NSString *) onGeLoScanningStarted{
-    return [self buildBeaconlessJSExpression];
+    return [self buildBeaconlessJSObject];
 }
 
 -(NSString *) onGeLoScanningStopped {
-    return [self buildBeaconlessJSExpression];
+    return [self buildBeaconlessJSObject];
 }
 
 -(NSString *) javascriptForBeacon:(GeLoBeacon *)beacon {
@@ -136,12 +134,11 @@
 
 # pragma mark Private Helpers
 
-- (NSString *) buildBeaconlessJSExpression {
-    NSString *jsExpression = [NSString stringWithFormat:@"%@();", self.callback];
-    return jsExpression;
+- (NSString *) buildBeaconlessJSObject {
+    return @"{}";
 }
 
-- (NSString *) buildBeaconJSExpression {
+- (NSString *) buildBeaconJSObject {
     _beacon = self.notification.userInfo[@"beacon"];
     
     if(!_beacon){
@@ -149,9 +146,7 @@
     }
 
     NSString *beaconJSON = [self javascriptForBeacon:_beacon];
-    NSString *expression = [NSString stringWithFormat:@"%@(new MyPlugin.GeLoBeacon(%@));", self.callback, beaconJSON];
-
-    return expression;
+    return beaconJSON;
 }
 
 @end

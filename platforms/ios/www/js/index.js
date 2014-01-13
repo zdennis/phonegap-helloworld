@@ -154,13 +154,13 @@ var app = {
     var K = MyPlugin.Constants;
 
     // window.map.onGeLoNearestBeaconChanged(new MyPlugin.Beacon(beaconData));
-    MyPlugin.on(K.GeLoNearestBeaconChanged, "window.map.onGeLoNearestBeaconChanged");
-    MyPlugin.on(K.GeLoBeaconFound, "window.map.onGeLoBeaconFound");
-    MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
-    MyPlugin.on(K.GeLoScanningStarted, "window.map.onGeLoScanningStarted");
+    MyPlugin.on(K.GeLoNearestBeaconChanged, $.proxy(window.map.onGeLoNearestBeaconChanged, window.map));
+    MyPlugin.on(K.GeLoBeaconFound, $.proxy(window.map.onGeLoBeaconFound, window.map));
+    MyPlugin.on(K.GeLoBeaconExpired, $.proxy(window.map.onGeLoBeaconExpired, window.map));
+    MyPlugin.on(K.GeLoScanningStarted, $.proxy(window.map.onGeLoScanningStarted, window.map));
     MyPlugin.isScanning(function(status){
-      alert("Scanning Status: "+status);
-    })
+      //alert("Scanning Status: "+status);
+    });
     //MyPlugin.setDefaultTimeToLive(2);
 
     $("button").on("click", function(){

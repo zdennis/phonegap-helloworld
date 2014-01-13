@@ -24,7 +24,8 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
   on: function(sdkConstant, callback){
     return cordova.exec(
       function(message){
-        console.log("Success");
+        var jsonObj = $.parseJSON(message);
+        callback(jsonObj);
       },
       function(){
         console.log("Fail");
@@ -144,7 +145,6 @@ cordova.define("com.phonegap.plugins.MyPlugin.MyPlugin", function(require, expor
   knownBeacons: function(callback){
     return cordova.exec(
       function(beacons){
-        //alert(message);
         var jsonObj = $.parseJSON(beacons);
         var beaconArray = [];
         $.each(jsonObj, function(idx, beacon) {

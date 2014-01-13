@@ -23,7 +23,7 @@ var Map = function(){
       height = body.height();
 
   this.nearestBeacon = {};
-  this.beacons = [];
+  this.knownBeacons = [];
 
   var mapElement = $('#map');
   this.el = mapElement;
@@ -55,8 +55,8 @@ Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
     if (beacon.beaconId !== this.nearestBeacon.beaconId) {
       $("[data-beacon-id='" + this.nearestBeacon.beaconId + "']").removeClass("noBlink");
 
-      for (var i = 0; i < this.beacons.length; i++) {
-        if (this.beacons[i].beaconId === this.nearestBeacon.beaconId) {
+      for (var i = 0; i < this.knownBeacons.length; i++) {
+        if (this.knownBeacons[i].beaconId === this.nearestBeacon.beaconId) {
           $("[data-beacon-id='" + this.nearestBeacon.beaconId + "']").addClass("blink");
           break;
         }
@@ -75,8 +75,8 @@ Map.prototype.onGeLoNearestBeaconChanged = function(beacon){
 
 Map.prototype.onGeLoBeaconFound = function(beacon){
   var found;
-  for (var i = 0; i < this.beacons.length; i++) {
-    if (this.beacons[i].beaconId === beacon.beaconId) {
+  for (var i = 0; i < this.knownBeacons.length; i++) {
+    if (this.knownBeacons[i].beaconId === beacon.beaconId) {
       found = true;
       break;
     }
@@ -87,22 +87,22 @@ Map.prototype.onGeLoBeaconFound = function(beacon){
   }
 
   if (found !== true){
-    this.beacons.push(beacon);
+    this.knownBeacons.push(beacon);
   }
 };
 
 Map.prototype.onGeLoBeaconExpired = function(beacon){
   var index;
 
-  for (var i = 0; i < this.beacons.length; i++) {
-    if (this.beacons[i].beaconId === beacon.beaconId) {
+  for (var i = 0; i < this.knownBeacons.length; i++) {
+    if (this.knownBeacons[i].beaconId === beacon.beaconId) {
       index = i;
       break;
     }
   }
 
   if (index !== undefined) {
-    this.beacons.splice(index, 1);
+    this.knownBeacons.splice(index, 1);
   }
 
   $("[data-beacon-id='" + beacon.beaconId + "']").removeClass("noBlink");
@@ -154,13 +154,13 @@ var app = {
     var K = MyPlugin.Constants;
 
     // window.map.onGeLoNearestBeaconChanged(new MyPlugin.Beacon(beaconData));
-    MyPlugin.on(K.GeLoNearestBeaconChanged, "window.map.onGeLoNearestBeaconChanged");
-    MyPlugin.on(K.GeLoBeaconFound, "window.map.onGeLoBeaconFound");
-    MyPlugin.on(K.GeLoBeaconExpired, "window.map.onGeLoBeaconExpired");
-    MyPlugin.on(K.GeLoScanningStarted, "window.map.onGeLoScanningStarted");
+    MyPlugin.on(K.GeLoNearestBeaconChanged, $.proxy(window.map.onGeLoNearestBeaconChanged, window.map));
+    MyPlugin.on(K.GeLoBeaconFound, $.proxy(window.map.onGeLoBeaconFound, window.map));
+    MyPlugin.on(K.GeLoBeaconExpired, $.proxy(window.map.onGeLoBeaconExpired, window.map));
+    MyPlugin.on(K.GeLoScanningStarted, $.proxy(window.map.onGeLoScanningStarted, window.map));
     MyPlugin.isScanning(function(status){
-      alert("Scanning Status: "+status);
-    })
+      //alert("Scanning Status: "+status);
+    });
     //MyPlugin.setDefaultTimeToLive(2);
 
     $("button").on("click", function(){

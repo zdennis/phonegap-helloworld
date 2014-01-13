@@ -82,18 +82,23 @@
         _callbacks = [NSMutableDictionary dictionary];
 
     NSString *notificationName = [command.arguments objectAtIndex:0];
-    NSString *callback = [command.arguments objectAtIndex:1];
 
-    [_callbacks setObject:callback forKey:notificationName];
+    [_callbacks setObject:command.callbackId forKey:notificationName];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(event:) name:notificationName object:nil];
 }
 
 -(void)event:(NSNotification *)notification {
-    NSString *callback = [_callbacks objectForKey:notification.name];
-    NSString *jsExpression = [MyPluginJavaScriptExpression jsExpressionForNotification:notification andCallback:callback];
+    CDVPluginResult *result = nil;
+    NSString *jsResult = nil;
 
-    [self.webView stringByEvaluatingJavaScriptFromString:jsExpression];
+    NSString *callback = [_callbacks objectForKey:notification.name];
+    NSString *jsExpression = [MyPluginJavaScriptExpression jsExpressionForNotification:notification];
+    result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsExpression];
+    [result setKeepCallbackAsBool:YES];
+
+    jsResult = [result toSuccessCallbackString:callback];
+    [self writeJavascript:jsResult];
 }
 
 @end
