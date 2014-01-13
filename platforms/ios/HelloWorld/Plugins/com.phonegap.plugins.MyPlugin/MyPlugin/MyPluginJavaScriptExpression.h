@@ -7,12 +7,11 @@
 @property (readonly) GeLoBeacon *beacon;
 @property (readonly) NSArray *beaconArray;
 
-+(NSString *) jsExpressionForNotification:(NSNotification *) notification;
++(NSString *) javascriptForNotification:(NSNotification *) notification;
 +(NSString *) javascriptForGeLoBeacon:(GeLoBeacon *)beacon;
 +(NSString *) javascriptForGeLoBeaconArray:(NSArray *)beacons;
 
--(id) initWithNotification:(NSNotification *) notification 
-      andCallback:(NSString *) callback;
+-(id) initWithNotification:(NSNotification *) notification;
 -(id) initWithGeLoBeacon:(GeLoBeacon *) beacon;
 
 -(NSString *) jsExpression;

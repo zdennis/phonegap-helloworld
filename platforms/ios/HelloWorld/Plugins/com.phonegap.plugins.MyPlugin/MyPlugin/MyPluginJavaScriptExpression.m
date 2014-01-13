@@ -2,18 +2,27 @@
 
 @implementation MyPluginJavaScriptExpression
 
-+(NSString *) jsExpressionForNotification:(NSNotification *) notification {
+/*
+ Returns a javascript object for a given notification.
+ */
++(NSString *) javascriptForNotification:(NSNotification *) notification {
   MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc] 
                                               initWithNotification: notification];
   return [expression jsExpression];
 }
 
+/*
+ Returns a javascript object for a given GeLoBeacon.
+ */
 +(NSString *) javascriptForGeLoBeacon:(GeLoBeacon *)beacon {
     MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc]
                                                 initWithGeLoBeacon:beacon];
     return [expression javascriptForBeacon:beacon];
 }
 
+/*
+ Returns a javascript object for a given array of GeLoBeacons.
+ */
 +(NSString *) javascriptForGeLoBeaconArray:(NSArray *)beacons {
     MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc]
                                                 initWithGeLoBeaconArray:beacons];
@@ -45,6 +54,9 @@
     return self;
 }
 
+/*
+ Builds a javascript object for a given NSNotification.
+ */
 -(NSString *) jsExpression {
   NSString *eventName = self.notification.name;
   NSString *eventHandlerAsString = [NSString stringWithFormat: @"on%@", eventName];
@@ -100,6 +112,9 @@
     return [self buildBeaconlessJSObject];
 }
 
+/* 
+ Builds a javascript representation of a GeLoBeacon
+ */
 -(NSString *) javascriptForBeacon:(GeLoBeacon *)beacon {
     NSError *error;
     NSData *json = [NSJSONSerialization dataWithJSONObject:[beacon dictionary] options:NSJSONWritingPrettyPrinted error:&error];
@@ -113,6 +128,9 @@
     return beaconJSON;
 }
 
+/*
+ Builds an array of javascript GeLoBeacons.
+ */
 -(NSString *) javascriptForBeaconArray {
     NSString *jsBeacons = [NSString stringWithFormat:@"["];
 
@@ -134,10 +152,16 @@
 
 # pragma mark Private Helpers
 
+/*
+ It returns nothing.
+ */
 - (NSString *) buildBeaconlessJSObject {
     return @"{}";
 }
 
+/*
+ Builds a javascript GeLoBeacon for a beacon provided by an NSNotification.
+ */
 - (NSString *) buildBeaconJSObject {
     _beacon = self.notification.userInfo[@"beacon"];
     
