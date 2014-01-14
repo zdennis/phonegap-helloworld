@@ -1,7 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <GeLoSDK/GeLoSDK.h>
 
-@interface MyPluginJavaScriptExpression : NSObject
+@interface GeLoCordovaPluginJavaScriptExpression : NSObject
 
 @property (readonly) NSNotification *notification;
 @property (readonly) GeLoBeacon *beacon;

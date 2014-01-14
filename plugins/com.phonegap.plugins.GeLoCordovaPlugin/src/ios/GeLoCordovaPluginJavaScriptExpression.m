@@ -1,12 +1,12 @@
-#import "MyPluginJavaScriptExpression.h"
+#import "GeLoCordovaPluginJavaScriptExpression.h"
 
-@implementation MyPluginJavaScriptExpression
+@implementation GeLoCordovaPluginJavaScriptExpression
 
 /*
  Returns a javascript object for a given notification.
  */
 +(NSString *) javascriptForNotification:(NSNotification *) notification {
-  MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc] 
+  GeLoCordovaPluginJavaScriptExpression *expression = [[GeLoCordovaPluginJavaScriptExpression alloc] 
                                               initWithNotification: notification];
   return [expression jsExpression];
 }
@@ -15,7 +15,7 @@
  Returns a javascript object for a given GeLoBeacon.
  */
 +(NSString *) javascriptForGeLoBeacon:(GeLoBeacon *)beacon {
-    MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc]
+    GeLoCordovaPluginJavaScriptExpression *expression = [[GeLoCordovaPluginJavaScriptExpression alloc]
                                                 initWithGeLoBeacon:beacon];
     return [expression javascriptForBeacon:beacon];
 }
@@ -24,7 +24,7 @@
  Returns a javascript object for a given array of GeLoBeacons.
  */
 +(NSString *) javascriptForGeLoBeaconArray:(NSArray *)beacons {
-    MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc]
+    GeLoCordovaPluginJavaScriptExpression *expression = [[GeLoCordovaPluginJavaScriptExpression alloc]
                                                 initWithGeLoBeaconArray:beacons];
 
     return [expression javascriptForBeaconArray];

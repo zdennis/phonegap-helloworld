@@ -1,9 +1,9 @@
-#import "MyPlugin.h"
-#import "MyPluginJavaScriptExpression.h"
+#import "GeLoCordovaPlugin.h"
+#import "GeLoCordovaPluginJavaScriptExpression.h"
 #import <GeLoSDK/GeLoSDK.h>
 
 
-@implementation MyPlugin
+@implementation GeLoCordovaPlugin
 /*
  Starts the beacon manager scanning for beacons.
  */
@@ -65,7 +65,7 @@
     NSArray *beacons = [[GeLoBeaconManager sharedInstance] knownBeacons];
 
     if ([beacons count]) {
-        NSString *jsonArray = [MyPluginJavaScriptExpression javascriptForGeLoBeaconArray:beacons];
+        NSString *jsonArray = [GeLoCordovaPluginJavaScriptExpression javascriptForGeLoBeaconArray:beacons];
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsonArray];
         jsResult = [result toSuccessCallbackString:command.callbackId];
     }else{
@@ -85,7 +85,7 @@
 
     GeLoBeacon *beacon = [[GeLoBeaconManager sharedInstance] nearestBeacon];
     if (beacon) {
-        NSString *jsObject = [MyPluginJavaScriptExpression javascriptForGeLoBeacon:beacon];
+        NSString *jsObject = [GeLoCordovaPluginJavaScriptExpression javascriptForGeLoBeacon:beacon];
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsObject];
         jsResult = [result toSuccessCallbackString:command.callbackId];
     }else{
@@ -128,7 +128,7 @@
 
     //event will callback to the 'on' javascript function.
     NSString *callback = [_callbacks objectForKey:notification.name];
-    NSString *jsExpression = [MyPluginJavaScriptExpression javascriptForNotification:notification];
+    NSString *jsExpression = [GeLoCordovaPluginJavaScriptExpression javascriptForNotification:notification];
     if (jsExpression) {
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsExpression];
         [result setKeepCallbackAsBool:YES];

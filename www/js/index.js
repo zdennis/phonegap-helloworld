@@ -151,28 +151,28 @@ var app = {
   onDeviceReady: function(){
     window.map = new Map();
 
-    var K = MyPlugin.Constants;
+    var K = GeLoCordovaPlugin.Constants;
 
-    // window.map.onGeLoNearestBeaconChanged(new MyPlugin.Beacon(beaconData));
-    MyPlugin.on(K.GeLoNearestBeaconChanged, $.proxy(window.map.onGeLoNearestBeaconChanged, window.map));
-    MyPlugin.on(K.GeLoBeaconFound, $.proxy(window.map.onGeLoBeaconFound, window.map));
-    MyPlugin.on(K.GeLoBeaconExpired, $.proxy(window.map.onGeLoBeaconExpired, window.map));
-    MyPlugin.on(K.GeLoScanningStarted, $.proxy(window.map.onGeLoScanningStarted, window.map));
-    MyPlugin.isScanning(function(status){
+    // window.map.onGeLoNearestBeaconChanged(new GeLoCordovaPlugin.Beacon(beaconData));
+    GeLoCordovaPlugin.on(K.GeLoNearestBeaconChanged, $.proxy(window.map.onGeLoNearestBeaconChanged, window.map));
+    GeLoCordovaPlugin.on(K.GeLoBeaconFound, $.proxy(window.map.onGeLoBeaconFound, window.map));
+    GeLoCordovaPlugin.on(K.GeLoBeaconExpired, $.proxy(window.map.onGeLoBeaconExpired, window.map));
+    GeLoCordovaPlugin.on(K.GeLoScanningStarted, $.proxy(window.map.onGeLoScanningStarted, window.map));
+    GeLoCordovaPlugin.isScanning(function(status){
       //alert("Scanning Status: "+status);
     });
-    //MyPlugin.setDefaultTimeToLive(2);
+    //GeLoCordovaPlugin.setDefaultTimeToLive(2);
 
     $("button").on("click", function(){
       var el = $(this);
       if($(el).hasClass("started")){
-        MyPlugin.stopScanningForBeacons();
+        GeLoCordovaPlugin.stopScanningForBeacons();
         $(el).removeClass("started");
         $(el).addClass("stopped").html("Start");
       } else {
         $(el).removeClass("stopped").html("Stop");
         $(el).addClass("started");
-        MyPlugin.startScanningForBeacons();
+        GeLoCordovaPlugin.startScanningForBeacons();
       }
     });
   }

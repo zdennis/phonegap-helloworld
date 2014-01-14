@@ -1,0 +1,182 @@
+Searching 9 files for "MyPlugin"
+
+/Users/Tyr/Developer/PhoneGap/GeLoCordovaPlugin/plugin.xml:
+    2  <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    3      xmlns:android="http://schemas.android.com/apk/res/android"
+    4:     id="com.phonegap.plugins.MyPlugin"
+    5      version="2.1.1">
+    6  
+    7:     <name>MyPlugin</name>
+    8    <author>Thomas and Zach</author>
+    9    
+   ..
+   14    <license>MIT</license>
+   15    
+   16:   <js-module src="www/MyPlugin.js" name="MyPlugin">
+   17:     <clobbers target="MyPlugin" />
+   18    </js-module>
+   19  
+   ..
+   26      
+   27      <config-file target="config.xml" parent="/*">
+   28:       <feature name="MyPlugin">
+   29:         <param name="ios-package" value="MyPlugin"/>
+   30        </feature>
+   31      </config-file>
+   32  
+   33:     <header-file src="src/ios/MyPlugin.h" target-dir="MyPlugin/"/>
+   34:     <source-file src="src/ios/MyPlugin.m" target-dir="MyPlugin/"/>
+   35  
+   36:     <header-file src="src/ios/MyPluginJavaScriptExpression.h" target-dir="MyPlugin/"/>
+   37:     <source-file src="src/ios/MyPluginJavaScriptExpression.m" target-dir="MyPlugin/"/>
+   38  
+   39    </platform>
+
+/Users/Tyr/Developer/PhoneGap/GeLoCordovaPlugin/src/ios/MyPlugin.h:
+    3  #import <Cordova/CDVPlugin.h>
+    4  
+    5: @interface MyPlugin : CDVPlugin
+    6  
+    7  @property (nonatomic) NSMutableDictionary *callbacks;
+
+/Users/Tyr/Developer/PhoneGap/GeLoCordovaPlugin/src/ios/MyPlugin.m:
+    1: #import "MyPlugin.h"
+    2: #import "MyPluginJavaScriptExpression.h"
+    3  #import <GeLoSDK/GeLoSDK.h>
+    4  
+    5  
+    6: @implementation MyPlugin
+    7  /*
+    8   Starts the beacon manager scanning for beacons.
+    .
+   66  
+   67      if ([beacons count]) {
+   68:         NSString *jsonArray = [MyPluginJavaScriptExpression javascriptForGeLoBeaconArray:beacons];
+   69          result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsonArray];
+   70          jsResult = [result toSuccessCallbackString:command.callbackId];
+   ..
+   86      GeLoBeacon *beacon = [[GeLoBeaconManager sharedInstance] nearestBeacon];
+   87      if (beacon) {
+   88:         NSString *jsObject = [MyPluginJavaScriptExpression javascriptForGeLoBeacon:beacon];
+   89          result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsObject];
+   90          jsResult = [result toSuccessCallbackString:command.callbackId];
+   ..
+  129      //event will callback to the 'on' javascript function.
+  130      NSString *callback = [_callbacks objectForKey:notification.name];
+  131:     NSString *jsExpression = [MyPluginJavaScriptExpression javascriptForNotification:notification];
+  132      if (jsExpression) {
+  133          result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:jsExpression];
+
+/Users/Tyr/Developer/PhoneGap/GeLoCordovaPlugin/src/ios/MyPluginJavaScriptExpression.h:
+    2  #import <GeLoSDK/GeLoSDK.h>
+    3  
+    4: @interface MyPluginJavaScriptExpression : NSObject
+    5  
+    6  @property (readonly) NSNotification *notification;
+
+/Users/Tyr/Developer/PhoneGap/GeLoCordovaPlugin/src/ios/MyPluginJavaScriptExpression.m:
+    1: #import "MyPluginJavaScriptExpression.h"
+    2  
+    3: @implementation MyPluginJavaScriptExpression
+    4  
+    5  /*
+    .
+    7   */
+    8  +(NSString *) javascriptForNotification:(NSNotification *) notification {
+    9:   MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc] 
+   10                                                initWithNotification: notification];
+   11    return [expression jsExpression];
+   ..
+   16   */
+   17  +(NSString *) javascriptForGeLoBeacon:(GeLoBeacon *)beacon {
+   18:     MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc]
+   19                                                  initWithGeLoBeacon:beacon];
+   20      return [expression javascriptForBeacon:beacon];
+   ..
+   25   */
+   26  +(NSString *) javascriptForGeLoBeaconArray:(NSArray *)beacons {
+   27:     MyPluginJavaScriptExpression *expression = [[MyPluginJavaScriptExpression alloc]
+   28                                                  initWithGeLoBeaconArray:beacons];
+   29  
+
+/Users/Tyr/Developer/PhoneGap/GeLoCordovaPlugin/www/MyPlugin.js:
+    1: var MyPlugin = {
+    2    /*
+    3      The set of currently supported constants recognized by the GeLoBeaconManager.
+    .
+   51          console.log("Fail");
+   52        },
+   53:       "MyPlugin",
+   54        "on",
+   55        [sdkConstant, callback]
+   ..
+   85            console.log("Fail");
+   86          },
+   87:         "MyPlugin",
+   88          "startScanningForBeacons",
+   89          []
+   ..
+  105          console.log("Fail");
+  106        },
+  107:       "MyPlugin",
+  108        "stopScanningForBeacons",
+  109        []
+  ...
+  126          console.log("Fail");
+  127        },
+  128:       "MyPlugin",
+  129        "isScanning",
+  130        []
+  ...
+  143          console.log("Fail");
+  144        },
+  145:       "MyPlugin",
+  146        "setDefaultTimeToLive",
+  147        [arg]
+  ...
+  161          console.log("Fail");
+  162        },
+  163:       "MyPlugin",
+  164        "setDefaultFalloff",
+  165        [arg]
+  ...
+  178          console.log("Fail");
+  179        },
+  180:       "MyPlugin",
+  181        "setDefaultSignalCeiling",
+  182        [arg]
+  ...
+  196          var beaconArray = [];
+  197          $.each(jsonObj, function(idx, beacon) {
+  198:           beaconArray.push(new MyPlugin.GeLoBeacon(beacon));
+  199          })
+  200          callback(beaconArray);
+  ...
+  203          callback([]);
+  204        },
+  205:       "MyPlugin",
+  206        "knownBeacons",
+  207        []
+  ...
+  219        function(beacon){
+  220          var jsonObj = $.parseJSON(beacon);
+  221:         callback(new MyPlugin.GeLoBeacon(jsonObj));
+  222        },
+  223        function(){
+  224          callback({});
+  225        },
+  226:       "MyPlugin",
+  227        "nearestBeacon",
+  228        []
+  ...
+  239          console.log("Fail");
+  240        },
+  241:       "MyPlugin",
+  242        "unsetNearestBeacon",
+  243        []
+  ...
+  246  };
+  247  
+  248: module.exports = MyPlugin;
+
+45 matches across 6 files

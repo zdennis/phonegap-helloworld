@@ -2,7 +2,7 @@
 #import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface MyPlugin : CDVPlugin
+@interface GeLoCordovaPlugin : CDVPlugin
 
 @property (nonatomic) NSMutableDictionary *callbacks;
 

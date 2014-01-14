@@ -1,4 +1,7 @@
-var MyPlugin = {
+var GeLoCordovaPlugin = {
+  /*
+    The set of currently supported constants recognized by the GeLoBeaconManager.
+  */
   Constants: {
     GeLoNearestBeaconExpired: "GeLoNearestBeaconExpired",
     GeLoNearestBeaconChanged: "GeLoNearestBeaconChanged",
@@ -13,6 +16,17 @@ var MyPlugin = {
     GeLoScanningStopped: "GeLoScanningStopped"
   },
 
+  /*
+    Creates an instance of a GeLoBeacon.
+
+    @constructor
+    @param {object} beacon Information about a GeLo beacon.
+    @param {number} beacon.beaconId The id of a beacon.
+    @param {number} beacon.signalStrength The signal strength used to dermine nearest beacon.
+    @param {number} beacon.receievedRSSI The RSSI of a beacon.
+    @param {number} beacon.timeToLive The current time before the beacon reference is destoyed if a new signal is not received.
+    @param {number} beacon.txPower The transmission power of a beacon. 2: High 1: Medium 0: Low
+  */
   GeLoBeacon: function(beacon) {
     this.beaconId = beacon.beaconId;
     this.signalStrength = beacon.signalStrength;
@@ -21,6 +35,12 @@ var MyPlugin = {
     this.txPower = beacon.txPower;
   },
 
+  /*
+    Registers for a notification sent by the GeLoBeaconManager
+
+    @callback callback
+    @param {string} sdkConstant The constant used to register for a notification. Use a constant provided by the plugin.
+  */
   on: function(sdkConstant, callback){
     return cordova.exec(
       function(message){
@@ -30,22 +50,18 @@ var MyPlugin = {
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "on",
       [sdkConstant, callback]
     );
   },
 
+  /*
+    Notifies the beacon manager to start scanning for beacons.
 
-    // MyPlugin.startScanning();
-    // MyPlugin.stopScanning();
-
-    // MyPlugin.startScanning(3000); //ms to run, then stop?
-
-    // MyPlugin.startScanning(function(){
-    //   // do thing
-    // }, 3000); //ms to run, then stop?
-
+    @param {array} args An array of optional arguements. A single argument will signify a period to scan for.
+      If a second arguement is supplied, it's expected to be a function that's called after the scanning period.
+  */
   startScanningForBeacons: function(args){
     var delayMilliseconds = 0,
         fn = function(){};
@@ -68,7 +84,7 @@ var MyPlugin = {
         function(){
           console.log("Fail");
         },
-        "MyPlugin",
+        "GeLoCordovaPlugin",
         "startScanningForBeacons",
         []
       );
@@ -79,18 +95,27 @@ var MyPlugin = {
     setTimeout(_startScanning, delayMilliseconds)
   },
 
+  /*
+    Notifies the beacon manager to stop scanning for beacons.
+  */
   stopScanningForBeacons: function(){
     return cordova.exec(
       function(message){},
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "stopScanningForBeacons",
       []
     );
   },
 
+  /*
+    Returns whether the beacon manager is currently scanning.
+
+    @callback callback
+    @returns {boolean} Scanning status.
+  */
   isScanning: function(callback){
     return cordova.exec(
       function(message){
@@ -100,93 +125,124 @@ var MyPlugin = {
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "isScanning",
       []
     );
   },
 
+  /*
+    Sets the time limit for the beacon manager to maintain a reference to a known beacon.
+
+    @param {number} arg The time in seconds that the timer starts at.
+  */
   setDefaultTimeToLive: function(arg){
     return cordova.exec(
       function(message){},
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "setDefaultTimeToLive",
       [arg]
     );
   },
 
+
+  /*
+    Sets the minimum signal strength threshold for beacon recognition.
+
+    @param {number} arg The signal strength, values are negative and the closer to zero the stronger the signal strenth.
+  */
   setDefaultFalloff: function(arg){
     return cordova.exec(
       function(message){},
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "setDefaultFalloff",
       [arg]
     );
   },
 
+  /*
+    Sets the maximum signal strength threshold for beacon recognition.
+
+    @param {number} arg The signal strengh, values are negative and the closer to zero the stronger the signal strength.
+  */
   setDefaultSignalCeiling: function(arg){
     return cordova.exec(
       function(message){},
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "setDefaultSignalCeiling",
       [arg]
     );
   },
 
+  /*
+    Retrieves the current list of known beacons.
+
+    @callback callback
+    @returns {array} An array that contains GeLoBeacon objects recorded by the beacon manager.
+  */
   knownBeacons: function(callback){
     return cordova.exec(
       function(beacons){
         var jsonObj = $.parseJSON(beacons);
         var beaconArray = [];
         $.each(jsonObj, function(idx, beacon) {
-          beaconArray.push(new MyPlugin.GeLoBeacon(beacon));
+          beaconArray.push(new GeLoCordovaPlugin.GeLoBeacon(beacon));
         })
         callback(beaconArray);
       },
       function(){
         callback([]);
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "knownBeacons",
       []
     );
   },
 
+  /*
+    Retrieves the current nearest beacon.
+
+    @callback callback
+    @returns {object} The nearest GeLoBeacon.
+  */
   nearestBeacon: function(callback){
     return cordova.exec(
       function(beacon){
         var jsonObj = $.parseJSON(beacon);
-        callback(new MyPlugin.GeLoBeacon(jsonObj));
+        callback(new GeLoCordovaPlugin.GeLoBeacon(jsonObj));
       },
       function(){
         callback({});
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "nearestBeacon",
       []
     );
   },
 
+  /*
+    Unsets the nearest beacon so that the beacon manager is forced to find the nearest beacon again.
+  */
   unsetNearestBeacon: function(){
     return cordova.exec(
       function(message){},
       function(){
         console.log("Fail");
       },
-      "MyPlugin",
+      "GeLoCordovaPlugin",
       "unsetNearestBeacon",
       []
     );
   }
 };
 
-module.exports = MyPlugin;
+module.exports = GeLoCordovaPlugin;
