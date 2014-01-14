@@ -1,4 +1,8 @@
-cordova.define("com.phonegap.plugins.GeLoCordovaPlugin.GeLoCordovaPlugin", function(require, exports, module) {/**
+cordova.define("com.phonegap.plugins.GeLoCordovaPlugin.GeLoCordovaPlugin", function(require, exports, module) {/** @module GeLoCordovaPlugin */
+var exports = {};
+exports.PluginName = "GeLoCordovaPlugin";
+
+/**
   Helper method for enforcing expectations about arguments to methods.
 
   @param {object} argValue The value that will have an expectation made against it.
@@ -48,9 +52,6 @@ var expectArgIsFunction = function(argValue, argName){
 var expectArgIsNumber = function(argValue, argName){
   expect(argValue, argName, { type: (typeof 1) });
 };
-
-/** @module GeLoCordovaPlugin */
-var exports = {};
 
 /*
   The set of currently supported events recognized by the GeLoBeaconManager.
@@ -106,7 +107,7 @@ exports.on = function(sdkConstant, successCallback, failureCallback){
     function(){
       failureCallback.apply(this, arguments);
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "on",
     [sdkConstant, successCallback]
   );
@@ -130,7 +131,7 @@ exports.startScanningForBeacons = function(delayInMilliseconds){
       function(){
         console.log("Fail");
       },
-      "GeLoCordovaPlugin",
+      exports.PluginName,
       "startScanningForBeacons",
       []
     );
@@ -150,7 +151,7 @@ exports.stopScanningForBeacons = function(){
     function(){
       console.log("Fail");
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "stopScanningForBeacons",
     []
   );
@@ -159,8 +160,7 @@ exports.stopScanningForBeacons = function(){
 /**
   Returns whether the beacon manager is currently scanning.
 
-  @callback callback
-  @returns {boolean} Scanning status.
+  @param {function} callback The function to call with the boolean answer to whether or not scanning is currently happening.
 */
 exports.isScanning = function(callback){
   expectArgIsFunction(callback, "callback");
@@ -173,7 +173,7 @@ exports.isScanning = function(callback){
     function(){
       console.log("Fail");
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "isScanning",
     []
   );
@@ -194,7 +194,7 @@ exports.setDefaultTimeToLive = function(seconds){
     function(){
       console.log("Fail");
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "setDefaultTimeToLive",
     [seconds]
   );
@@ -216,7 +216,7 @@ exports.setDefaultFalloff = function(signalStrength){
     function(){
       console.log("Fail");
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "setDefaultFalloff",
     [signalStrength]
   );
@@ -236,7 +236,7 @@ exports.setDefaultSignalCeiling = function(signalStrength){
     function(){
       console.log("Fail");
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "setDefaultSignalCeiling",
     [signalStrength]
   );
@@ -245,8 +245,7 @@ exports.setDefaultSignalCeiling = function(signalStrength){
 /**
   Retrieves the current list of known beacons.
 
-  @callback callback
-  @returns {array} An array that contains GeLoBeacon objects recorded by the beacon manager.
+  @param {function} callback The function to call with the list of known beacons (as an array of GeLoBeacon objects).
 */
 exports.knownBeacons = function(callback){
   expectArgIsFunction(callback, "callback");
@@ -263,7 +262,7 @@ exports.knownBeacons = function(callback){
     function(){
       callback([]);
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "knownBeacons",
     []
   );
@@ -273,8 +272,7 @@ exports.knownBeacons = function(callback){
   Retrieves the current nearest beacon. If you are interested in being notified of
   when the nearest beacon changes then listen for the GeLoNearestBeaconChanged event.
 
-  @callback callback
-  @returns {object} The nearest GeLoBeacon.
+  @param {function} callback The function to call with the nearestBeacon (as a GeLoBeacon).
 */
 exports.nearestBeacon = function(callback){
   expectArgIsFunction(callback, "callback");
@@ -287,7 +285,7 @@ exports.nearestBeacon = function(callback){
     function(){
       callback({});
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "nearestBeacon",
     []
   );
@@ -302,7 +300,7 @@ exports.unsetNearestBeacon = function(){
     function(){
       console.log("Fail");
     },
-    "GeLoCordovaPlugin",
+    exports.PluginName,
     "unsetNearestBeacon",
     []
   );
