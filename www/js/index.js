@@ -151,7 +151,7 @@ var app = {
   onDeviceReady: function(){
     window.map = new Map();
 
-    var K = GeLoCordovaPlugin.Constants;
+    var K = GeLoCordovaPlugin.Events;
 
     // window.map.onGeLoNearestBeaconChanged(new GeLoCordovaPlugin.Beacon(beaconData));
     GeLoCordovaPlugin.on(K.GeLoNearestBeaconChanged, $.proxy(window.map.onGeLoNearestBeaconChanged, window.map));

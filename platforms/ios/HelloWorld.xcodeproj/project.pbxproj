@@ -41,8 +41,8 @@
 		ABC689EC185A6A6600391DD8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC689EB185A6A6600391DD8 /* CoreBluetooth.framework */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
-		801505D4BD574946870F6B33 /* GeLoCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C7EDB457274DB19F9E4E8C /* GeLoCordovaPlugin.m */; };
-		AB87FACAB65143269075F9CC /* GeLoCordovaPluginJavaScriptExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = E70FD374D9514E10B0749ECC /* GeLoCordovaPluginJavaScriptExpression.m */; };
+		4AF3A09E397A46AE8BBC17EF /* GeLoCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D49E007F516C4A9B821958D9 /* GeLoCordovaPlugin.m */; };
+		193BCBF2CB5A40A59C8AFCC3 /* GeLoCordovaPluginJavaScriptExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0818E62DD347E7809055E2 /* GeLoCordovaPluginJavaScriptExpression.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,10 +106,10 @@
 		ABC689EB185A6A6600391DD8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloWorld/config.xml; sourceTree = "<group>"; };
-		F8C7EDB457274DB19F9E4E8C /* GeLoCordovaPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "GeLoCordovaPlugin.m"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		E70FD374D9514E10B0749ECC /* GeLoCordovaPluginJavaScriptExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "GeLoCordovaPluginJavaScriptExpression.m"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPluginJavaScriptExpression.m"; sourceTree = "<group>"; fileEncoding = 4; };
-		22E0989B43704FD08D97EA78 /* GeLoCordovaPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GeLoCordovaPlugin.h"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
-		88BFEA050E634642B0B2EC27 /* GeLoCordovaPluginJavaScriptExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GeLoCordovaPluginJavaScriptExpression.h"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPluginJavaScriptExpression.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D49E007F516C4A9B821958D9 /* GeLoCordovaPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "GeLoCordovaPlugin.m"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		7F0818E62DD347E7809055E2 /* GeLoCordovaPluginJavaScriptExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "GeLoCordovaPluginJavaScriptExpression.m"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPluginJavaScriptExpression.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		B9FE52F70F5249EABD1328B9 /* GeLoCordovaPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GeLoCordovaPlugin.h"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4725561055C44E7997BA74E0 /* GeLoCordovaPluginJavaScriptExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "GeLoCordovaPluginJavaScriptExpression.h"; path = "com.phonegap.plugins.GeLoCordovaPlugin/GeLoCordovaPlugin/GeLoCordovaPluginJavaScriptExpression.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,10 +232,10 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				F8C7EDB457274DB19F9E4E8C /* GeLoCordovaPlugin.m */,
-				E70FD374D9514E10B0749ECC /* GeLoCordovaPluginJavaScriptExpression.m */,
-				22E0989B43704FD08D97EA78 /* GeLoCordovaPlugin.h */,
-				88BFEA050E634642B0B2EC27 /* GeLoCordovaPluginJavaScriptExpression.h */,
+				D49E007F516C4A9B821958D9 /* GeLoCordovaPlugin.m */,
+				7F0818E62DD347E7809055E2 /* GeLoCordovaPluginJavaScriptExpression.m */,
+				B9FE52F70F5249EABD1328B9 /* GeLoCordovaPlugin.h */,
+				4725561055C44E7997BA74E0 /* GeLoCordovaPluginJavaScriptExpression.h */,
 			);
 			name = Plugins;
 			path = HelloWorld/Plugins;
@@ -421,8 +421,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				801505D4BD574946870F6B33 /* GeLoCordovaPlugin.m in Sources */,
-				AB87FACAB65143269075F9CC /* GeLoCordovaPluginJavaScriptExpression.m in Sources */,
+				4AF3A09E397A46AE8BBC17EF /* GeLoCordovaPlugin.m in Sources */,
+				193BCBF2CB5A40A59C8AFCC3 /* GeLoCordovaPluginJavaScriptExpression.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
